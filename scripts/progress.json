@@ -1,0 +1,384 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-02-21T07:23:03.425Z",
+  "items": [
+    {
+      "id": "1.1",
+      "status": "done",
+      "filesTouched": [
+        "vendor/patterns.ts",
+        "upstream.lock",
+        "compatibility.json",
+        "compatibility.schema.json",
+        "scripts/init-manifest.ts"
+      ],
+      "commandsRun": [
+        "git rev-parse HEAD",
+        "npx tsx scripts/init-manifest.ts",
+        "npx tsx scripts/validate-manifest.ts"
+      ],
+      "artifactOutputs": [
+        "vendor/patterns.ts",
+        "upstream.lock",
+        "compatibility.json"
+      ],
+      "notes": [
+        "257 patterns: 44 decorative, 66 effects, 99 geometric, 48 gradients",
+        "Schema fixed to draft-07 for ajv compatibility",
+        "256 CSS_TRANSLATE_CANDIDATE, 1 SKIP (moonlit-fog: css-filter)"
+      ],
+      "updatedAt": "2026-02-21T06:58:37.625Z"
+    },
+    {
+      "id": "1.2",
+      "status": "done",
+      "filesTouched": [
+        "scripts/assets/Inter.ttf"
+      ],
+      "commandsRun": [
+        "curl (gstatic inter ttf)",
+        "font validation check"
+      ],
+      "artifactOutputs": [
+        "scripts/assets/Inter.ttf"
+      ],
+      "notes": [
+        "67016 bytes, valid TTF magic bytes confirmed"
+      ],
+      "updatedAt": "2026-02-21T06:59:19.158Z"
+    },
+    {
+      "id": "2.1",
+      "status": "done",
+      "filesTouched": [
+        "scripts/utils/cssParser.test.ts"
+      ],
+      "commandsRun": [
+        "npx vitest run scripts/utils/cssParser.test.ts"
+      ],
+      "artifactOutputs": [],
+      "notes": [
+        "13 tests passing"
+      ],
+      "updatedAt": "2026-02-21T07:01:11.249Z"
+    },
+    {
+      "id": "2.2",
+      "status": "done",
+      "filesTouched": [
+        "scripts/classify.ts",
+        "scripts/init-manifest.ts"
+      ],
+      "commandsRun": [
+        "npx tsx scripts/init-manifest.ts"
+      ],
+      "artifactOutputs": [],
+      "notes": [
+        "Enhanced tile-grid heuristic with pattern ID signals and small-tile detection",
+        "226 CSS_TRANSLATE_CANDIDATE, 30 SVG_FALLBACK_REQUIRED, 1 SKIP"
+      ],
+      "updatedAt": "2026-02-21T07:01:11.250Z"
+    },
+    {
+      "id": "2.3",
+      "status": "done",
+      "filesTouched": [
+        "scripts/translate.ts",
+        "packages/satori-patterns/src/patterns/gradients.ts",
+        "packages/satori-patterns/src/patterns/geometric.ts",
+        "packages/satori-patterns/src/patterns/decorative.ts",
+        "packages/satori-patterns/src/patterns/effects.ts",
+        "compatibility.json"
+      ],
+      "commandsRun": [
+        "npx tsx scripts/translate.ts"
+      ],
+      "artifactOutputs": [
+        "packages/satori-patterns/src/patterns/*.ts",
+        "compatibility.json"
+      ],
+      "notes": [
+        "226 css, 30 svg-fallback, 1 skip, 0 parse-errors",
+        "Idempotent: re-run produces no diff",
+        "Whitespace normalized in gradient values"
+      ],
+      "updatedAt": "2026-02-21T07:03:25.625Z"
+    },
+    {
+      "id": "2.4",
+      "status": "done",
+      "filesTouched": [
+        "scripts/render-all.ts",
+        "scripts/translate.ts",
+        "scripts/update-skill.ts",
+        "compatibility.json",
+        ".babs-memo/skills/pattern-conversion/SKILL.md"
+      ],
+      "commandsRun": [
+        "npx tsx scripts/translate.ts",
+        "npx tsx scripts/render-all.ts",
+        "npx tsx scripts/update-skill.ts"
+      ],
+      "artifactOutputs": [
+        "apps/browser/public/thumbnails/*.png",
+        "compatibility.json"
+      ],
+      "notes": [
+        "195 PASS, 31 SILENT_FAIL, 0 FAIL",
+        "Fixed: gradient backgroundSize defaulting to 100% 100%",
+        "Fixed: CSS comment stripping",
+        "Fixed: update-skill.ts path to .babs-memo",
+        "2 learned entries appended to skill file"
+      ],
+      "updatedAt": "2026-02-21T07:11:08.004Z"
+    },
+    {
+      "id": "3.1",
+      "status": "done",
+      "filesTouched": [
+        "packages/satori-patterns/src/types.ts"
+      ],
+      "commandsRun": [
+        "npx tsc --noEmit"
+      ],
+      "artifactOutputs": [],
+      "notes": [
+        "Types compile cleanly, using ReactElement instead of JSX.Element"
+      ],
+      "updatedAt": "2026-02-21T07:14:34.693Z"
+    },
+    {
+      "id": "3.2",
+      "status": "done",
+      "filesTouched": [
+        "scripts/build-index.ts",
+        "packages/satori-patterns/src/index.ts"
+      ],
+      "commandsRun": [
+        "npx tsx scripts/build-index.ts",
+        "npx tsc --noEmit"
+      ],
+      "artifactOutputs": [],
+      "notes": [
+        "195 eligible CSS patterns exported",
+        "Fixed toCamelCase for upstream IDs with spaces and uppercase chars"
+      ],
+      "updatedAt": "2026-02-21T07:14:34.694Z"
+    },
+    {
+      "id": "4.1",
+      "status": "done",
+      "filesTouched": [
+        "packages/satori-patterns/src/svg-fallbacks/dot-grid.tsx",
+        "packages/satori-patterns/src/svg-fallbacks/line-grid.tsx",
+        "packages/satori-patterns/src/svg-fallbacks/diagonal-crosshatch.tsx",
+        "packages/satori-patterns/src/svg-fallbacks/halftone-radial-dots.tsx",
+        "packages/satori-patterns/src/svg-fallbacks/noise-grain.tsx",
+        "scripts/add-v1-fallbacks.ts"
+      ],
+      "commandsRun": [
+        "npx tsx scripts/add-v1-fallbacks.ts"
+      ],
+      "artifactOutputs": [],
+      "notes": [
+        "5 V1 fallback components created per Skill C-3 through C-7"
+      ],
+      "updatedAt": "2026-02-21T07:17:35.822Z"
+    },
+    {
+      "id": "4.2",
+      "status": "done",
+      "filesTouched": [
+        "scripts/render-fallbacks.ts",
+        "compatibility.json"
+      ],
+      "commandsRun": [
+        "npx tsx scripts/render-fallbacks.ts",
+        "npx tsx scripts/update-skill.ts",
+        "npx tsx scripts/build-index.ts"
+      ],
+      "artifactOutputs": [
+        "apps/browser/public/thumbnails/dot-grid.png",
+        "apps/browser/public/thumbnails/line-grid.png",
+        "apps/browser/public/thumbnails/diagonal-crosshatch.png",
+        "apps/browser/public/thumbnails/halftone-radial-dots.png",
+        "apps/browser/public/thumbnails/noise-grain.png"
+      ],
+      "notes": [
+        "All 5 PASS",
+        "200 total eligible patterns (195 CSS + 5 SVG fallback)"
+      ],
+      "updatedAt": "2026-02-21T07:17:35.823Z"
+    },
+    {
+      "id": "5.1",
+      "status": "done",
+      "filesTouched": [
+        "apps/browser/package.json",
+        "apps/browser/tsconfig.json",
+        "apps/browser/next.config.ts",
+        "apps/browser/app/layout.tsx"
+      ],
+      "commandsRun": [
+        "npm install"
+      ],
+      "artifactOutputs": [],
+      "notes": [
+        "Next.js 15 app scaffolded"
+      ],
+      "updatedAt": "2026-02-21T07:23:03.424Z"
+    },
+    {
+      "id": "5.2",
+      "status": "done",
+      "filesTouched": [
+        "apps/browser/app/page.tsx",
+        "apps/browser/app/api/manifest/route.ts"
+      ],
+      "commandsRun": [],
+      "artifactOutputs": [],
+      "notes": [
+        "Pattern grid with filters, search, copy button"
+      ],
+      "updatedAt": "2026-02-21T07:23:03.425Z"
+    },
+    {
+      "id": "5.3",
+      "status": "done",
+      "filesTouched": [
+        "apps/browser/app/pattern/[id]/page.tsx"
+      ],
+      "commandsRun": [],
+      "artifactOutputs": [],
+      "notes": [
+        "Detail page with side-by-side preview, JSON, notes"
+      ],
+      "updatedAt": "2026-02-21T07:23:03.425Z"
+    },
+    {
+      "id": "5.4",
+      "status": "done",
+      "filesTouched": [
+        "apps/browser/app/api/render/[id]/route.ts"
+      ],
+      "commandsRun": [],
+      "artifactOutputs": [],
+      "notes": [
+        "Live render via @vercel/og, cache 86400s"
+      ],
+      "updatedAt": "2026-02-21T07:23:03.425Z"
+    },
+    {
+      "id": "5.5",
+      "status": "todo",
+      "filesTouched": [],
+      "commandsRun": [],
+      "artifactOutputs": [],
+      "notes": [
+        "human step"
+      ],
+      "updatedAt": null
+    },
+    {
+      "id": "6.1",
+      "status": "done",
+      "filesTouched": [
+        "scripts/generate-review-queue.ts",
+        "scripts/review-queue.txt"
+      ],
+      "commandsRun": [
+        "npx tsx scripts/generate-review-queue.ts"
+      ],
+      "artifactOutputs": [],
+      "notes": [
+        "70 patterns need review"
+      ],
+      "updatedAt": "2026-02-21T07:23:03.425Z"
+    },
+    {
+      "id": "6.2",
+      "status": "done",
+      "filesTouched": [
+        "scripts/score-social-bg.ts",
+        "compatibility.json"
+      ],
+      "commandsRun": [
+        "npx tsx scripts/score-social-bg.ts"
+      ],
+      "artifactOutputs": [],
+      "notes": [
+        "200 scored, 192 not-suitable, 0 suitable, 70 needs-review"
+      ],
+      "updatedAt": "2026-02-21T07:23:03.425Z"
+    },
+    {
+      "id": "6.3",
+      "status": "todo",
+      "filesTouched": [],
+      "commandsRun": [],
+      "artifactOutputs": [],
+      "notes": [
+        "human step"
+      ],
+      "updatedAt": null
+    },
+    {
+      "id": "7.1",
+      "status": "todo",
+      "filesTouched": [],
+      "commandsRun": [],
+      "artifactOutputs": [],
+      "notes": [],
+      "updatedAt": null
+    },
+    {
+      "id": "7.2",
+      "status": "todo",
+      "filesTouched": [],
+      "commandsRun": [],
+      "artifactOutputs": [],
+      "notes": [],
+      "updatedAt": null
+    },
+    {
+      "id": "7.3",
+      "status": "todo",
+      "filesTouched": [],
+      "commandsRun": [],
+      "artifactOutputs": [],
+      "notes": [
+        "human step"
+      ],
+      "updatedAt": null
+    },
+    {
+      "id": "7.4",
+      "status": "todo",
+      "filesTouched": [],
+      "commandsRun": [],
+      "artifactOutputs": [],
+      "notes": [],
+      "updatedAt": null
+    },
+    {
+      "id": "8.1",
+      "status": "todo",
+      "filesTouched": [],
+      "commandsRun": [],
+      "artifactOutputs": [],
+      "notes": [],
+      "updatedAt": null
+    },
+    {
+      "id": "8.2",
+      "status": "todo",
+      "filesTouched": [],
+      "commandsRun": [],
+      "artifactOutputs": [],
+      "notes": [
+        "human step if permissions needed"
+      ],
+      "updatedAt": null
+    }
+  ]
+}

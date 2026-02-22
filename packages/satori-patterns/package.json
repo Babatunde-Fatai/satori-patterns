@@ -1,0 +1,27 @@
+{
+  "name": "satori-patterns",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "peerDependencies": {
+    "satori": ">=0.10.0",
+    "react": ">=18"
+  },
+  "keywords": [
+    "satori",
+    "og-image",
+    "patterns",
+    "background",
+    "open-graph",
+    "nextjs",
+    "vercel"
+  ],
+  "scripts": {
+    "build:index": "tsx ../../scripts/build-index.ts",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  }
+}

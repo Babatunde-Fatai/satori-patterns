@@ -8,11 +8,29 @@
     "build": "next build",
     "start": "next start",
     "postbuild": "next-sitemap",
-    "lint": "next lint"
+    "lint": "next lint",
+    "validate:manifest": "tsx scripts/validate-manifest.ts",
+    "pipeline:init": "tsx scripts/init-manifest.ts",
+    "pipeline:translate": "tsx scripts/translate.ts",
+    "pipeline:render": "tsx scripts/render-all.ts",
+    "pipeline:add-fallbacks": "tsx scripts/add-v1-fallbacks.ts",
+    "pipeline:render-fallbacks": "tsx scripts/render-fallbacks.ts",
+    "pipeline:score-social": "tsx scripts/score-social-bg.ts",
+    "pipeline:review-queue": "tsx scripts/generate-review-queue.ts",
+    "pipeline:patch-silent-fails": "tsx scripts/patch-silent-fails.ts",
+    "pipeline:diff-upstream": "tsx scripts/diff-upstream.ts",
+    "pipeline:full": "npm run pipeline:init && npm run pipeline:translate && npm run pipeline:render && npm run pipeline:add-fallbacks && npm run pipeline:render-fallbacks && npm run pipeline:patch-silent-fails && npm run pipeline:score-social && npm run pipeline:review-queue && npm run build:index",
+    "build:index": "tsx scripts/build-index.ts",
+    "build:package": "cd packages/satori-patterns && npm run build",
+    "typecheck": "cd packages/satori-patterns && npm run typecheck",
+    "skill:update": "tsx scripts/update-skill.ts",
+    "test:css-parser": "vitest run scripts/utils/cssParser.test.ts",
+    "dev:browser": "cd apps/browser && npm run dev"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-tabs": "^1.1.12",
+    "@resvg/resvg-js": "^2.6.2",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "class-variance-authority": "^0.7.1",
@@ -25,19 +43,24 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-qr-code": "^2.0.16",
+    "satori": "^0.19.2",
     "sonner": "^2.0.5",
     "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^20.19.33",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "ajv": "^8.18.0",
+    "ajv-formats": "^3.0.1",
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
     "tailwindcss": "^4",
+    "tsx": "^4.21.0",
     "tw-animate-css": "^1.3.4",
-    "typescript": "^5"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
   }
 }

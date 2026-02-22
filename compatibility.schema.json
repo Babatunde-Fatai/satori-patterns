@@ -1,0 +1,120 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://satori-patterns.local/compatibility.schema.json",
+  "title": "Satori Patterns Compatibility Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "patterns"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["upstreamCommitSha", "generatedAt", "satoriVersion"],
+      "properties": {
+        "upstreamCommitSha": { "type": "string", "minLength": 1 },
+        "generatedAt": { "type": "string", "format": "date-time" },
+        "satoriVersion": { "type": "string", "minLength": 1 }
+      }
+    },
+    "patterns": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/patternRecord" }
+    }
+  },
+  "definitions": {
+    "patternRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "category",
+        "status",
+        "skipReason",
+        "renderMethod",
+        "features",
+        "preliminaryStatus",
+        "satoriStyle",
+        "satoriVersion",
+        "suitableForSocialBg",
+        "notes",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "category": {
+          "type": "string",
+          "enum": ["gradients", "geometric", "decorative", "effects"]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "PASS",
+            "PARTIAL",
+            "FAIL",
+            "SILENT_FAIL",
+            "SVG_FALLBACK_REQUIRED",
+            "SKIP",
+            "DEPRECATED",
+            "UNCLASSIFIED"
+          ]
+        },
+        "skipReason": {
+          "anyOf": [
+            { "type": "null" },
+            {
+              "type": "string",
+              "enum": [
+                "conic-gradient",
+                "backdrop-filter",
+                "animation",
+                "pseudo-element",
+                "canvas",
+                "blend-mode",
+                "css-filter",
+                "background-clip",
+                "unresolved-var",
+                "unsupported-calc",
+                "unknown-feature",
+                "parse-error",
+                "mask",
+                "background-attachment",
+                "unsupported-color"
+              ]
+            }
+          ]
+        },
+        "renderMethod": {
+          "type": "string",
+          "enum": ["css", "svg-fallback", "none"]
+        },
+        "features": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "preliminaryStatus": {
+          "anyOf": [{ "type": "null" }, { "type": "string" }]
+        },
+        "satoriStyle": {
+          "anyOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "additionalProperties": true
+            }
+          ]
+        },
+        "satoriVersion": { "type": "string", "minLength": 1 },
+        "suitableForSocialBg": {
+          "anyOf": [{ "type": "boolean" }, { "type": "null" }]
+        },
+        "notes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}

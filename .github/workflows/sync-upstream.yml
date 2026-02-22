@@ -1,0 +1,48 @@
+name: Sync Upstream PatternCraft
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # Every Monday 6 AM UTC
+  workflow_dispatch:        # Also triggerable manually
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch upstream patterns.ts
+        run: |
+          curl -s https://raw.githubusercontent.com/megh-bari/pattern-craft/main/src/data/patterns.ts \
+            -o /tmp/upstream-patterns.ts
+
+      - name: Check for changes
+        id: check
+        run: |
+          if ! diff -q vendor/patterns.ts /tmp/upstream-patterns.ts > /dev/null 2>&1; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            cp /tmp/upstream-patterns.ts vendor/patterns.ts
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run diff analysis + incremental translate + render
+        if: steps.check.outputs.has_changes == 'true'
+        run: |
+          npx tsx scripts/diff-upstream.ts   # outputs diff-report.json
+          npx tsx scripts/translate.ts --only-changed  # reads diff-report.json
+          npx tsx scripts/render-all.ts --only-changed
+
+      - name: Open PR with changes
+        if: steps.check.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          title: "chore: upstream PatternCraft sync — new/changed patterns"
+          body-path: diff-report.json
+          branch: sync/upstream-${{ github.run_id }}
