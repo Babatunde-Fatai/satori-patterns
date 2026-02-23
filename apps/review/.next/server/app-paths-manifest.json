@@ -1,8 +1,5 @@
 {
   "/api/state/route": "app/api/state/route.js",
-  "/api/trigger-reconvert/route": "app/api/trigger-reconvert/route.js",
-  "/api/queue-reconvert/route": "app/api/queue-reconvert/route.js",
   "/api/thumbnail/[id]/route": "app/api/thumbnail/[id]/route.js",
-  "/api/approve/route": "app/api/approve/route.js",
   "/page": "app/page.js"
 }
