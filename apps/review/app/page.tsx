@@ -14,6 +14,7 @@ interface ManifestPattern {
   satoriStyle: Record<string, unknown> | null
   renderMethod: string
   notes: string[]
+  thumbnailExists: boolean
 }
 
 interface ApprovedPattern {
@@ -54,8 +55,6 @@ interface AppState {
 // Helpers
 // ---------------------------------------------------------------------------
 
-const THUMBNAIL_BASE = process.env.NEXT_PUBLIC_THUMBNAIL_BASE_URL ?? "http://localhost:3000/thumbnails"
-
 const CAT_COLORS: Record<string, string> = {
   gradients: "#8b6fcf",
   geometric: "#3a8fd4",
@@ -64,8 +63,8 @@ const CAT_COLORS: Record<string, string> = {
 }
 
 const STATUS_COLORS: Record<string, { bg: string; text: string }> = {
-  PASS: { bg: "var(--green-bg)", text: "#5aaa78" },
-  PARTIAL: { bg: "var(--amber-bg)", text: "#c8a030" },
+  PASS: { bg: "#052e16", text: "#4ade80" },
+  PARTIAL: { bg: "#1a1200", text: "#fbbf24" },
 }
 
 // ---------------------------------------------------------------------------
@@ -84,10 +83,10 @@ function ToastContainer({ toasts, remove }: { toasts: Toast[]; remove: (id: numb
           role="alert"
           style={{
             padding: "10px 16px",
-            borderRadius: "var(--radius-md)",
-            background: t.ok ? "var(--green-bg)" : "var(--red-bg)",
-            border: `1px solid ${t.ok ? "var(--green-border)" : "var(--red-border)"}`,
-            color: t.ok ? "#5aaa78" : "#e06060",
+            borderRadius: 6,
+            background: t.ok ? "#052e16" : "#230f0f",
+            border: `1px solid ${t.ok ? "#1e4030" : "#3d1818"}`,
+            color: t.ok ? "#4ade80" : "#f87171",
             fontSize: 13,
             fontWeight: 500,
             cursor: "pointer",
@@ -129,25 +128,27 @@ function PatternCard({
     try { await fn(pattern.id) } finally { setBusy(false) }
   }
 
-  const statusStyle = STATUS_COLORS[pattern.status] ?? { bg: "var(--bg-elevated)", text: "var(--text-muted)" }
+  const statusStyle = STATUS_COLORS[pattern.status] ?? { bg: "#111", text: "#a0a0a0" }
 
   return (
     <div
       style={{
-        background: "var(--bg-surface)",
-        borderRadius: "var(--radius-md)",
+        background: "#111111",
+        borderRadius: 6,
         overflow: "hidden",
-        border: "1px solid var(--bg-border)",
+        border: "1px solid #2a2a2a",
         display: "flex",
         flexDirection: "column",
-        boxShadow: "var(--shadow-card)",
-        transition: "border-color var(--transition)",
+        boxShadow: "0 1px 4px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.3)",
+        transition: "border-color 140ms ease",
       }}
+      onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#444" }}
+      onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#2a2a2a" }}
     >
-      {/* Thumbnail */}
-      <div style={{ position: "relative", height: 164, background: "var(--bg-base)", overflow: "hidden" }}>
+      {/* Thumbnail area */}
+      <div style={{ position: "relative", height: 164, background: "#0a0a0a", overflow: "hidden" }}>
         <img
-          src={`${THUMBNAIL_BASE}/${pattern.id}.png`}
+          src={`/api/thumbnail/${pattern.id}`}
           alt={pattern.name}
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
           onError={(e) => { (e.target as HTMLImageElement).style.display = "none" }}
@@ -176,6 +177,24 @@ function PatternCard({
           <span>Satori PNG</span>
           <span>CSS →</span>
         </div>
+        {/* Missing thumbnail warning */}
+        {!pattern.thumbnailExists && (
+          <div style={{
+            position: "absolute",
+            top: 6,
+            left: 6,
+            background: "#1a1200",
+            border: "1px solid #4a3800",
+            color: "#fbbf24",
+            fontSize: 9,
+            fontWeight: 700,
+            padding: "2px 6px",
+            borderRadius: 4,
+            letterSpacing: "0.05em",
+          }}>
+            ⚠ NO PNG
+          </div>
+        )}
       </div>
 
       {/* Info */}
@@ -185,7 +204,7 @@ function PatternCard({
             fontFamily: "var(--font-display)",
             fontWeight: 600,
             fontSize: 13,
-            color: "var(--text-primary)",
+            color: "#e8e4dc",
             lineHeight: 1.3,
             flex: 1,
             marginRight: 8,
@@ -211,14 +230,14 @@ function PatternCard({
         <div style={{ display: "flex", gap: 6, alignItems: "center", marginBottom: 10 }}>
           <span style={{
             fontSize: 10, padding: "1px 7px", borderRadius: 4,
-            border: `1px solid ${CAT_COLORS[pattern.category] ?? "var(--bg-border-light)"}22`,
+            border: `1px solid ${CAT_COLORS[pattern.category] ?? "#444444"}22`,
             background: `${CAT_COLORS[pattern.category] ?? "#888"}18`,
-            color: CAT_COLORS[pattern.category] ?? "var(--text-muted)",
+            color: CAT_COLORS[pattern.category] ?? "#a0a0a0",
             fontWeight: 600,
           }}>
             {pattern.category}
           </span>
-          <span style={{ fontSize: 10, color: "var(--text-muted)" }}>{pattern.renderMethod}</span>
+          <span style={{ fontSize: 10, color: "#6e6a62" }}>{pattern.renderMethod}</span>
         </div>
 
         {/* Collapsible satoriStyle */}
@@ -228,7 +247,7 @@ function PatternCard({
               onClick={() => setStyleExpanded((v) => !v)}
               style={{
                 fontSize: 10,
-                color: "var(--accent-warm)",
+                color: "#a68a64",
                 background: "none",
                 border: "none",
                 cursor: "pointer",
@@ -242,14 +261,14 @@ function PatternCard({
             {styleExpanded && (
               <pre style={{
                 marginTop: 8,
-                background: "var(--bg-base)",
-                color: "var(--accent-warm)",
+                background: "#0a0a0a",
+                color: "#a68a64",
                 padding: 10,
-                borderRadius: "var(--radius-sm)",
+                borderRadius: 6,
                 fontSize: 10,
                 overflow: "auto",
                 maxHeight: 160,
-                border: "1px solid var(--bg-border)",
+                border: "1px solid #222",
                 fontFamily: "monospace",
               }}>
                 {JSON.stringify(pattern.satoriStyle, null, 2)}
@@ -289,24 +308,23 @@ function PatternCard({
 
 function actionBtnStyle(variant: "approve" | "reject" | "reconvert", disabled: boolean): React.CSSProperties {
   const configs = {
-    approve: { bg: "var(--green-bg)", text: "#5aaa78", border: "var(--green-border)", hoverBg: "#163826" },
-    reject: { bg: "var(--red-bg)", text: "#e06060", border: "var(--red-border)", hoverBg: "#3d1818" },
-    reconvert: { bg: "var(--amber-bg)", text: "#c8a030", border: "var(--amber-border)", hoverBg: "#2e2010" },
+    approve: { bg: "#1a3a1a", text: "#4ade80", border: "#2d5a2d" },
+    reject: { bg: "#3a1a1a", text: "#f87171", border: "#5a2d2d" },
+    reconvert: { bg: "#2a2000", text: "#fbbf24", border: "#4a3800" },
   }
   const c = configs[variant]
   return {
     flex: 1,
     padding: "6px 0",
-    fontSize: 11,
-    fontWeight: 700,
-    letterSpacing: "0.02em",
-    borderRadius: "var(--radius-sm)",
+    fontSize: 13,
+    fontWeight: 500,
+    borderRadius: 6,
     border: `1px solid ${c.border}`,
     cursor: disabled ? "not-allowed" : "pointer",
     background: c.bg,
     color: c.text,
     opacity: disabled ? 0.4 : 1,
-    transition: "opacity var(--transition)",
+    transition: "background 140ms ease, opacity 140ms ease",
     fontFamily: "var(--font-body)",
   }
 }
@@ -320,16 +338,17 @@ function StatPill({ label, value, color }: { label: string; value: number; color
     <div style={{
       display: "flex",
       flexDirection: "column",
-      gap: 2,
-      padding: "8px 14px",
-      background: "var(--bg-elevated)",
-      borderRadius: "var(--radius-sm)",
-      border: "1px solid var(--bg-border)",
+      gap: 4,
+      padding: "10px 16px",
+      background: "#111",
+      borderRadius: 6,
+      border: "1px solid #2a2a2a",
+      minWidth: 72,
     }}>
-      <span style={{ fontSize: 18, fontWeight: 700, fontFamily: "var(--font-display)", color: color ?? "var(--text-primary)", lineHeight: 1 }}>
+      <span style={{ fontSize: 28, fontWeight: 700, fontFamily: "var(--font-display)", color: color ?? "#e8e4dc", lineHeight: 1 }}>
         {value}
       </span>
-      <span style={{ fontSize: 10, color: "var(--text-muted)", fontWeight: 500, letterSpacing: "0.04em" }}>
+      <span style={{ fontSize: 12, color: "#6e6a62", fontWeight: 500, letterSpacing: "0.04em" }}>
         {label}
       </span>
     </div>
@@ -349,6 +368,7 @@ export default function ReviewPage() {
   const [toasts, setToasts] = useState<Toast[]>([])
   const [reconvertLog, setReconvertLog] = useState<string | null>(null)
   const [reconvertRunning, setReconvertRunning] = useState(false)
+  const [reconvertDone, setReconvertDone] = useState(false)
 
   const addToast = useCallback((msg: string, ok: boolean) => {
     const id = Date.now()
@@ -436,6 +456,7 @@ export default function ReviewPage() {
 
   async function handleRunReconversion() {
     setReconvertRunning(true)
+    setReconvertDone(false)
     setReconvertLog("Starting reconversion pipeline…\n")
     try {
       const res = await fetch("/api/trigger-reconvert", { method: "POST" })
@@ -446,6 +467,8 @@ export default function ReviewPage() {
       } else if (data.success) {
         setReconvertLog(data.log ?? "Done")
         addToast(`Reconversion done — ${data.processed ?? 0} patterns processed`, true)
+        setReconvertDone(true)
+        setTimeout(() => setReconvertDone(false), 2000)
         await loadState()
       } else {
         setReconvertLog(`Error: ${data.error ?? "unknown"}\n${data.log ?? ""}`)
@@ -462,15 +485,15 @@ export default function ReviewPage() {
 
   if (loading && !state) {
     return (
-      <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--bg-base)" }}>
+      <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#0e0e0c" }}>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 12 }}>
           <div style={{
             width: 28, height: 28, borderRadius: "50%",
-            border: "2px solid var(--bg-border)",
-            borderTopColor: "var(--accent-warm)",
+            border: "2px solid #2a2a2a",
+            borderTopColor: "#a68a64",
             animation: "spin 0.8s linear infinite",
           }} />
-          <span style={{ fontSize: 13, color: "var(--text-muted)", fontWeight: 500 }}>Loading review state…</span>
+          <span style={{ fontSize: 13, color: "#6e6a62", fontWeight: 500 }}>Loading review state…</span>
         </div>
         <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
       </div>
@@ -487,13 +510,13 @@ export default function ReviewPage() {
   ]
 
   return (
-    <div style={{ minHeight: "100vh", background: "var(--bg-base)" }}>
+    <div style={{ minHeight: "100vh", background: "#0e0e0c" }}>
       <ToastContainer toasts={toasts} remove={removeToast} />
 
       {/* Header */}
       <header style={{
-        background: "var(--bg-surface)",
-        borderBottom: "1px solid var(--bg-border)",
+        background: "#0f1410",
+        borderBottom: "1px solid #1e2a1e",
         padding: "0 24px",
         position: "sticky",
         top: 0,
@@ -506,34 +529,29 @@ export default function ReviewPage() {
             justifyContent: "space-between",
             alignItems: "center",
             padding: "14px 0 12px",
-            borderBottom: "1px solid var(--bg-border)",
+            borderBottom: "1px solid #1a2318",
             flexWrap: "wrap",
             gap: 12,
           }}>
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-              <div style={{
-                width: 7, height: 7, borderRadius: "50%",
-                background: "var(--accent-warm)",
-                boxShadow: "0 0 6px var(--accent-warm)",
-              }} />
               <span style={{
                 fontFamily: "var(--font-display)",
-                fontSize: 15,
-                fontWeight: 700,
+                fontSize: 18,
+                fontWeight: 500,
                 letterSpacing: "-0.02em",
-                color: "var(--text-primary)",
+                color: "#ffffff",
               }}>
                 Satori Patterns
               </span>
               <span style={{
-                fontSize: 10,
+                fontSize: 11,
                 fontWeight: 600,
                 letterSpacing: "0.08em",
                 textTransform: "uppercase",
-                color: "var(--text-muted)",
-                padding: "2px 6px",
+                color: "#656d4a",
+                padding: "2px 8px",
                 borderRadius: 4,
-                border: "1px solid var(--bg-border-light)",
+                background: "#1a2318",
               }}>
                 Review Tool
               </span>
@@ -545,34 +563,49 @@ export default function ReviewPage() {
                 disabled={reconvertRunning}
                 style={{
                   padding: "7px 14px",
-                  borderRadius: "var(--radius-sm)",
-                  border: "1px solid var(--amber-border)",
-                  background: reconvertRunning ? "var(--bg-elevated)" : "var(--amber-bg)",
-                  color: reconvertRunning ? "var(--text-muted)" : "#c8a030",
+                  borderRadius: 6,
+                  border: "none",
+                  background: reconvertDone ? "#1a3a1a" : (reconvertRunning ? "#1a1a16" : "#a68a64"),
+                  color: reconvertDone ? "#4ade80" : (reconvertRunning ? "#6e6a62" : "#ffffff"),
                   fontSize: 12,
-                  fontWeight: 700,
+                  fontWeight: 500,
                   cursor: reconvertRunning ? "not-allowed" : "pointer",
                   fontFamily: "var(--font-body)",
-                  transition: "all var(--transition)",
-                  opacity: reconvertRunning ? 0.6 : 1,
+                  transition: "all 200ms ease",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 6,
+                  opacity: reconvertRunning ? 0.7 : 1,
                 }}
               >
-                {reconvertRunning ? "Running…" : "Run Reconversion"}
+                {reconvertRunning && (
+                  <span style={{
+                    display: "inline-block",
+                    width: 10, height: 10,
+                    border: "1.5px solid #6e6a62",
+                    borderTopColor: "#a68a64",
+                    borderRadius: "50%",
+                    animation: "spin 0.7s linear infinite",
+                  }} />
+                )}
+                {reconvertRunning ? "Running…" : reconvertDone ? "Done ✓" : "Run Reconversion"}
               </button>
               <button
                 onClick={loadState}
                 style={{
                   padding: "7px 14px",
-                  borderRadius: "var(--radius-sm)",
-                  border: "1px solid var(--bg-border-light)",
+                  borderRadius: 6,
+                  border: "1px solid #444",
                   background: "transparent",
-                  color: "var(--text-secondary)",
+                  color: "#ede0d4",
                   fontSize: 12,
                   fontWeight: 500,
                   cursor: "pointer",
                   fontFamily: "var(--font-body)",
-                  transition: "border-color var(--transition)",
+                  transition: "background 140ms ease",
                 }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = "#1a1a1a" }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = "transparent" }}
               >
                 Refresh
               </button>
@@ -581,12 +614,12 @@ export default function ReviewPage() {
 
           {/* Stats strip */}
           {s && (
-            <div style={{ display: "flex", gap: 10, padding: "10px 0", overflowX: "auto" }}>
+            <div style={{ display: "flex", gap: 10, padding: "12px 0", overflowX: "auto" }}>
               <StatPill label="Total" value={s.total} />
-              <StatPill label="Pending" value={s.pendingReview} color="#c8a030" />
-              <StatPill label="Approved" value={s.approved} color="#5aaa78" />
-              <StatPill label="Rejected" value={s.rejected} color="#e06060" />
-              <StatPill label="Reconvert" value={s.inReconvertQueue} color="#c8a030" />
+              <StatPill label="Pending" value={s.pendingReview} color="#d4a574" />
+              <StatPill label="Approved" value={s.approved} color="#4ade80" />
+              <StatPill label="Rejected" value={s.rejected} color="#f87171" />
+              <StatPill label="Reconvert" value={s.inReconvertQueue} color="#fbbf24" />
             </div>
           )}
         </div>
@@ -594,17 +627,17 @@ export default function ReviewPage() {
 
       {/* Reconversion log */}
       {reconvertLog && (
-        <div style={{ background: "var(--bg-elevated)", borderBottom: "1px solid var(--bg-border)", padding: "0 24px" }}>
+        <div style={{ background: "#0a0a0a", borderBottom: "1px solid #222", padding: "0 24px" }}>
           <div style={{ maxWidth: 1400, margin: "0 auto", padding: "12px 0" }}>
             <pre style={{
-              background: "var(--bg-base)",
-              color: "var(--accent-warm)",
+              background: "#0a0a0a",
+              color: "#a0a0a0",
               padding: "12px 16px",
-              borderRadius: "var(--radius-sm)",
-              fontSize: 11,
+              borderRadius: 6,
+              fontSize: 12,
               overflow: "auto",
-              maxHeight: 180,
-              border: "1px solid var(--bg-border)",
+              maxHeight: 240,
+              border: "1px solid #222",
               fontFamily: "monospace",
               margin: 0,
               lineHeight: 1.6,
@@ -617,18 +650,25 @@ export default function ReviewPage() {
 
       {/* Tabs + content */}
       <div style={{ maxWidth: 1400, margin: "0 auto", padding: "20px 24px" }}>
-        {/* Tab bar */}
-        <div style={{ display: "flex", gap: 2, marginBottom: 20, background: "var(--bg-surface)", padding: 4, borderRadius: "var(--radius-md)", border: "1px solid var(--bg-border)", width: "fit-content", overflowX: "auto" }}>
+        {/* Tab bar — border-bottom indicator style */}
+        <div style={{
+          display: "flex",
+          gap: 0,
+          marginBottom: 20,
+          borderBottom: "1px solid #222",
+          overflowX: "auto",
+        }}>
           {tabDefs.map((t) => (
             <button
               key={t.id}
               onClick={() => setTab(t.id)}
               style={{
-                padding: "6px 14px",
-                borderRadius: "var(--radius-sm)",
+                padding: "8px 16px",
+                borderRadius: 0,
                 border: "none",
-                background: tab === t.id ? "var(--bg-elevated)" : "transparent",
-                color: tab === t.id ? "var(--text-primary)" : "var(--text-muted)",
+                borderBottom: tab === t.id ? "2px solid #a68a64" : "2px solid transparent",
+                background: "transparent",
+                color: tab === t.id ? "#ffffff" : "#6e6a62",
                 fontSize: 12,
                 fontWeight: tab === t.id ? 600 : 400,
                 cursor: "pointer",
@@ -636,10 +676,12 @@ export default function ReviewPage() {
                 display: "flex",
                 alignItems: "center",
                 gap: 6,
-                transition: "all var(--transition)",
+                transition: "color 140ms ease",
                 whiteSpace: "nowrap",
-                boxShadow: tab === t.id ? "var(--shadow-card)" : "none",
+                marginBottom: -1,
               }}
+              onMouseEnter={(e) => { if (tab !== t.id) e.currentTarget.style.color = "#a8a49a" }}
+              onMouseLeave={(e) => { if (tab !== t.id) e.currentTarget.style.color = "#6e6a62" }}
             >
               {t.label}
               <span style={{
@@ -647,8 +689,8 @@ export default function ReviewPage() {
                 fontWeight: 700,
                 padding: "0 5px",
                 borderRadius: 10,
-                background: tab === t.id ? "var(--accent)" : "var(--bg-border)",
-                color: tab === t.id ? "#fff" : "var(--text-muted)",
+                background: "#222",
+                color: "#a0a0a0",
                 minWidth: 18,
                 textAlign: "center",
                 lineHeight: "16px",
@@ -667,14 +709,14 @@ export default function ReviewPage() {
                 gridColumn: "1/-1",
                 padding: "48px 32px",
                 textAlign: "center",
-                color: "var(--text-muted)",
+                color: "#6e6a62",
                 fontSize: 14,
-                background: "var(--bg-surface)",
-                borderRadius: "var(--radius-lg)",
-                border: "1px dashed var(--bg-border-light)",
+                background: "#111",
+                borderRadius: 10,
+                border: "1px dashed #2a2a2a",
               }}>
                 <div style={{ fontSize: 28, marginBottom: 10 }}>✓</div>
-                <div style={{ fontWeight: 600, color: "var(--text-secondary)", marginBottom: 4 }}>All done!</div>
+                <div style={{ fontWeight: 600, color: "#a8a49a", marginBottom: 4 }}>All done!</div>
                 <div>No patterns pending review.</div>
               </div>
             )}
@@ -694,7 +736,7 @@ export default function ReviewPage() {
         {tab === "reconvert" && (
           <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
             {state?.reconvertQueue.length === 0 && (
-              <div style={{ color: "var(--text-muted)", fontSize: 14, padding: "32px", textAlign: "center", background: "var(--bg-surface)", borderRadius: "var(--radius-md)", border: "1px solid var(--bg-border)" }}>
+              <div style={{ color: "#6e6a62", fontSize: 14, padding: "32px", textAlign: "center", background: "#111", borderRadius: 10, border: "1px solid #2a2a2a" }}>
                 Reconvert queue is empty.
               </div>
             )}
@@ -704,27 +746,27 @@ export default function ReviewPage() {
                 style={{
                   display: "flex", alignItems: "center", gap: 12,
                   padding: "10px 14px",
-                  background: "var(--bg-surface)",
-                  borderRadius: "var(--radius-md)",
-                  border: "1px solid var(--bg-border)",
+                  background: "#111",
+                  borderRadius: 10,
+                  border: "1px solid #2a2a2a",
                 }}
               >
                 <img
-                  src={`${THUMBNAIL_BASE}/${entry.id}.png`}
+                  src={`/api/thumbnail/${entry.id}`}
                   alt={entry.id}
-                  style={{ width: 64, height: 34, objectFit: "cover", borderRadius: 5, background: "var(--bg-base)", flexShrink: 0 }}
+                  style={{ width: 64, height: 34, objectFit: "cover", borderRadius: 5, background: "#0a0a0a", flexShrink: 0 }}
                   onError={(e) => { (e.target as HTMLImageElement).style.display = "none" }}
                 />
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontSize: 13, color: "var(--text-primary)", fontWeight: 600, fontFamily: "var(--font-display)", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{entry.id}</div>
-                  <div style={{ fontSize: 11, color: "var(--text-muted)", marginTop: 2 }}>
-                    Reason: <span style={{ color: "var(--accent-warm)" }}>{entry.reason}</span> · {new Date(entry.queuedAt).toLocaleString()}
+                  <div style={{ fontSize: 13, color: "#e8e4dc", fontWeight: 600, fontFamily: "var(--font-display)", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{entry.id}</div>
+                  <div style={{ fontSize: 11, color: "#6e6a62", marginTop: 2 }}>
+                    Reason: <span style={{ color: "#a68a64" }}>{entry.reason}</span> · {new Date(entry.queuedAt).toLocaleString()}
                   </div>
                 </div>
                 <span style={{
                   fontSize: 10, fontWeight: 700, padding: "2px 8px",
-                  borderRadius: 4, background: "var(--amber-bg)", color: "#c8a030",
-                  border: "1px solid var(--amber-border)", whiteSpace: "nowrap",
+                  borderRadius: 4, background: "#1a1200", color: "#fbbf24",
+                  border: "1px solid #4a3800", whiteSpace: "nowrap",
                 }}>
                   QUEUED
                 </span>
@@ -737,7 +779,7 @@ export default function ReviewPage() {
         {tab === "approved" && (
           <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
             {state?.approved.length === 0 && (
-              <div style={{ color: "var(--text-muted)", fontSize: 14, padding: "32px", textAlign: "center", background: "var(--bg-surface)", borderRadius: "var(--radius-md)", border: "1px solid var(--bg-border)" }}>
+              <div style={{ color: "#6e6a62", fontSize: 14, padding: "32px", textAlign: "center", background: "#111", borderRadius: 10, border: "1px solid #2a2a2a" }}>
                 No approved patterns yet.
               </div>
             )}
@@ -747,27 +789,27 @@ export default function ReviewPage() {
                 style={{
                   display: "flex", alignItems: "center", gap: 12,
                   padding: "8px 14px",
-                  background: "var(--bg-surface)",
-                  borderRadius: "var(--radius-md)",
-                  border: "1px solid var(--bg-border)",
+                  background: "#111",
+                  borderRadius: 10,
+                  border: "1px solid #2a2a2a",
                 }}
               >
                 <img
-                  src={`${THUMBNAIL_BASE}/${p.id}.png`}
+                  src={`/api/thumbnail/${p.id}`}
                   alt={p.name}
-                  style={{ width: 64, height: 34, objectFit: "cover", borderRadius: 5, background: "var(--bg-base)", flexShrink: 0 }}
+                  style={{ width: 64, height: 34, objectFit: "cover", borderRadius: 5, background: "#0a0a0a", flexShrink: 0 }}
                   onError={(e) => { (e.target as HTMLImageElement).style.display = "none" }}
                 />
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontSize: 13, color: "var(--text-primary)", fontWeight: 600, fontFamily: "var(--font-display)", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{p.name}</div>
-                  <div style={{ fontSize: 11, color: "var(--text-muted)", marginTop: 2 }}>
+                  <div style={{ fontSize: 13, color: "#e8e4dc", fontWeight: 600, fontFamily: "var(--font-display)", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{p.name}</div>
+                  <div style={{ fontSize: 11, color: "#6e6a62", marginTop: 2 }}>
                     {p.category} · {new Date(p.approvedAt).toLocaleDateString()}
                   </div>
                 </div>
                 <span style={{
                   fontSize: 10, fontWeight: 700, padding: "2px 8px",
-                  borderRadius: 4, background: "var(--green-bg)", color: "#5aaa78",
-                  border: "1px solid var(--green-border)", whiteSpace: "nowrap",
+                  borderRadius: 4, background: "#052e16", color: "#4ade80",
+                  border: "1px solid #1e4030", whiteSpace: "nowrap",
                 }}>
                   APPROVED
                 </span>
@@ -780,7 +822,7 @@ export default function ReviewPage() {
         {tab === "rejected" && (
           <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
             {state?.rejected.length === 0 && (
-              <div style={{ color: "var(--text-muted)", fontSize: 14, padding: "32px", textAlign: "center", background: "var(--bg-surface)", borderRadius: "var(--radius-md)", border: "1px solid var(--bg-border)" }}>
+              <div style={{ color: "#6e6a62", fontSize: 14, padding: "32px", textAlign: "center", background: "#111", borderRadius: 10, border: "1px solid #2a2a2a" }}>
                 No rejected patterns.
               </div>
             )}
@@ -790,21 +832,21 @@ export default function ReviewPage() {
                 style={{
                   display: "flex", alignItems: "center", gap: 12,
                   padding: "8px 14px",
-                  background: "var(--bg-surface)",
-                  borderRadius: "var(--radius-md)",
-                  border: "1px solid var(--bg-border)",
+                  background: "#111",
+                  borderRadius: 10,
+                  border: "1px solid #2a2a2a",
                 }}
               >
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontSize: 13, color: "var(--text-primary)", fontWeight: 600, fontFamily: "var(--font-display)", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{p.name}</div>
-                  <div style={{ fontSize: 11, color: "var(--text-muted)", marginTop: 2 }}>
+                  <div style={{ fontSize: 13, color: "#e8e4dc", fontWeight: 600, fontFamily: "var(--font-display)", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{p.name}</div>
+                  <div style={{ fontSize: 11, color: "#6e6a62", marginTop: 2 }}>
                     {p.category} · {new Date(p.rejectedAt).toLocaleDateString()}
                   </div>
                 </div>
                 <span style={{
                   fontSize: 10, fontWeight: 700, padding: "2px 8px",
-                  borderRadius: 4, background: "var(--red-bg)", color: "#e06060",
-                  border: "1px solid var(--red-border)", whiteSpace: "nowrap",
+                  borderRadius: 4, background: "#230f0f", color: "#f87171",
+                  border: "1px solid #3d1818", whiteSpace: "nowrap",
                 }}>
                   REJECTED
                 </span>
@@ -818,7 +860,6 @@ export default function ReviewPage() {
         @keyframes spin { to { transform: rotate(360deg); } }
         @media (max-width: 640px) {
           header { padding-left: 16px !important; padding-right: 16px !important; }
-          div[style*="max-width: 1400px"] { padding-left: 16px !important; padding-right: 16px !important; }
         }
       `}</style>
     </div>

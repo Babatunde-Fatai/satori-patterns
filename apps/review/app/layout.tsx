@@ -28,9 +28,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           }
           :root {
             --bg-base: #0e0e0c;
-            --bg-surface: #1a1a16;
-            --bg-elevated: #222218;
-            --bg-border: #2e2e28;
+            --bg-surface: #111111;
+            --bg-elevated: #1a1a16;
+            --bg-border: #2a2a2a;
             --bg-border-light: #3a3a32;
             --accent: #656d4a;
             --accent-hover: #76805a;
@@ -39,15 +39,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             --text-primary: #e8e4dc;
             --text-secondary: #a8a49a;
             --text-muted: #6e6a62;
-            --green: #3d7a52;
-            --green-bg: #0f2318;
+            --green: #4ade80;
+            --green-bg: #052e16;
             --green-border: #1e4030;
-            --red: #a03030;
+            --red: #f87171;
             --red-bg: #230f0f;
             --red-border: #3d1818;
-            --amber: #9a7020;
-            --amber-bg: #1f1808;
-            --amber-border: #3a2c0c;
+            --amber: #fbbf24;
+            --amber-bg: #1a1200;
+            --amber-border: #4a3800;
             --radius-sm: 6px;
             --radius-md: 10px;
             --radius-lg: 14px;

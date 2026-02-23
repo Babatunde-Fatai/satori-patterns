@@ -1,7 +1,7 @@
 {
   "meta": {
     "upstreamCommitSha": "17a4d3c7b5c923e52dfd4d32420aa9ca3bdfa41e",
-    "generatedAt": "2026-02-21T07:09:46.387Z",
+    "generatedAt": "2026-02-23T09:24:26.514Z",
     "satoriVersion": "satori@0.19.2"
   },
   "patterns": [
@@ -70,12 +70,12 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "bottom-amber-glow",
@@ -400,12 +400,12 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "halftone-radial-dots",
@@ -445,12 +445,12 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "lavender-cosmic-glow",
@@ -515,12 +515,12 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "orchid -depths",
@@ -586,12 +586,12 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "purple-corner-high",
@@ -610,12 +610,12 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "purple-corner-less",
@@ -634,12 +634,12 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "purple-haze-burst",
@@ -704,12 +704,12 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "soft-rose-glow-corners",
@@ -728,12 +728,12 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#fff8fc"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": false,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "soft-rose-glow-left-corner",
@@ -752,12 +752,12 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#fff8fc"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "soft-rose-glow-right-corner",
@@ -776,12 +776,12 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#fff8fc"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "teal-corner-cool",
@@ -800,12 +800,12 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "top-amber-glow",
@@ -2443,12 +2443,12 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "teal-glow-bg-top",
@@ -2614,12 +2614,12 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "warm-orange-glow-bg-top",
@@ -3171,10 +3171,10 @@
         "backgroundPosition": "0 0, 10px 10px, 15px 5px",
         "backgroundColor": "#000000"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "dark-sphere-grid",
@@ -3194,12 +3194,12 @@
         "backgroundPosition": "auto, auto, auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/3/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "dark-white-dotted-grid",
@@ -3931,12 +3931,12 @@
         "backgroundPosition": "auto, auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:4/4/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "dual-gradient-overlay-bottom",
@@ -3956,12 +3956,12 @@
         "backgroundPosition": "auto, auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:4/4/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "dual-gradient-overlay-top",
@@ -3981,12 +3981,12 @@
         "backgroundPosition": "auto, auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:4/4/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "dual-gradient-overlay-strong-swapped",
@@ -4006,12 +4006,12 @@
         "backgroundPosition": "auto, auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:4/4/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "gradient-left-diagonal-lines",
@@ -4081,12 +4081,12 @@
         "backgroundPosition": "auto, auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:4/4/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "grid-quad-purple-glow",
@@ -4106,12 +4106,12 @@
         "backgroundPosition": "auto, auto, auto, auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:6/6/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "hexagonal-lines",
@@ -4358,12 +4358,12 @@
         "backgroundPosition": "auto, auto, auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/3/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "magenta-orb-grid-light",
@@ -4383,12 +4383,12 @@
         "backgroundPosition": "auto, auto, auto",
         "backgroundColor": "white"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/3/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "matrix-green",
@@ -4540,12 +4540,12 @@
         "backgroundPosition": "auto, auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:4/4/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "purple-gradient-grid-left",
@@ -4565,12 +4565,12 @@
         "backgroundPosition": "auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/3/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "purple-gradient-grid-right",
@@ -4590,12 +4590,12 @@
         "backgroundPosition": "auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/3/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "right-masked-basic-grid",
@@ -4952,12 +4952,12 @@
         "backgroundPosition": "auto, auto, auto",
         "backgroundColor": "white"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/3/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "woven-fabric-light",
@@ -4977,12 +4977,12 @@
         "backgroundPosition": "auto, auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:4/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "zigzag-lightning-dark",
@@ -5170,12 +5170,12 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#0f172a"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "center-spotlight-blue",
@@ -5359,12 +5359,12 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "center-spotlight-cyan",
@@ -5407,12 +5407,12 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "deep-navy-gold",
@@ -5478,12 +5478,12 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "center-spotlight-emerald",
@@ -5550,12 +5550,12 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "golden-horizon-glow",
@@ -5620,12 +5620,12 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "magenta-nebula-glow",
@@ -5762,12 +5762,12 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "pearl-mist-glow",
@@ -5833,12 +5833,12 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "prismatic-aurora-burst",
@@ -5880,12 +5880,12 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "red-radial-glow",
@@ -5904,12 +5904,12 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "0.19.2",
+      "satoriVersion": "satori@0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-23T09:24:26.514Z"
     },
     {
       "id": "rich-burgundy",

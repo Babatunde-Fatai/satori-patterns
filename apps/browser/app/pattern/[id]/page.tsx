@@ -2,6 +2,7 @@ import fs from "node:fs"
 import path from "node:path"
 import Link from "next/link"
 import { unstable_cache } from "next/cache"
+import { ThumbnailWithFallback } from "./ThumbnailWithFallback"
 
 interface ApprovedPattern {
   id: string
@@ -164,7 +165,7 @@ export default async function PatternDetail({ params }: { params: Promise<{ id: 
             />
           </div>
 
-          {/* Satori render */}
+          {/* Satori render — with client-side fallback */}
           <div>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
               <span style={{ fontSize: 12, fontWeight: 600, color: "var(--text-muted)", letterSpacing: "0.04em", textTransform: "uppercase" }}>
@@ -172,19 +173,10 @@ export default async function PatternDetail({ params }: { params: Promise<{ id: 
               </span>
               <span style={{ fontSize: 10, color: "var(--text-muted)" }}>PNG output</span>
             </div>
-            <img
-              src={`/thumbnails/${pattern.id}.png`}
-              alt={`${pattern.name} rendered by Satori`}
-              style={{
-                width: "100%",
-                aspectRatio: "1200/630",
-                borderRadius: "var(--radius-md)",
-                border: "1px solid var(--border)",
-                boxShadow: "var(--shadow-card)",
-                objectFit: "cover",
-                display: "block",
-                background: "var(--bg-base)",
-              }}
+            <ThumbnailWithFallback
+              id={pattern.id}
+              name={pattern.name}
+              satoriStyle={pattern.satoriStyle}
             />
           </div>
         </div>

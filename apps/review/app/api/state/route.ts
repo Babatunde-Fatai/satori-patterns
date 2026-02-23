@@ -21,6 +21,11 @@ interface ManifestPattern {
 
 interface StateFile<T> { meta: { updatedAt: string; count: number }; patterns: T[] }
 
+function checkThumbnailExists(id: string): boolean {
+  const thumbPath = path.join(REPO_ROOT, "apps", "browser", "public", "thumbnails", `${id}.png`)
+  return fs.existsSync(thumbPath)
+}
+
 export async function GET() {
   try {
     const compatPath = path.join(REPO_ROOT, "compatibility.json")
@@ -38,13 +43,15 @@ export async function GET() {
     const reconvertIds = new Set(reconvert.patterns.map((p) => p.id))
 
     // Pending = PASS or PARTIAL, not yet in any decision bucket
-    const pending = manifest.patterns.filter(
-      (p) =>
-        (p.status === "PASS" || p.status === "PARTIAL") &&
-        !approvedIds.has(p.id) &&
-        !rejectedIds.has(p.id) &&
-        !reconvertIds.has(p.id)
-    )
+    const pending = manifest.patterns
+      .filter(
+        (p) =>
+          (p.status === "PASS" || p.status === "PARTIAL") &&
+          !approvedIds.has(p.id) &&
+          !rejectedIds.has(p.id) &&
+          !reconvertIds.has(p.id)
+      )
+      .map((p) => ({ ...p, thumbnailExists: checkThumbnailExists(p.id) }))
 
     return NextResponse.json({
       manifestMeta: manifest.meta,
