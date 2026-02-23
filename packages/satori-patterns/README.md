@@ -3,7 +3,7 @@
 Background patterns for [Satori](https://github.com/vercel/satori)
 and [@vercel/og](https://vercel.com/docs/functions/og-image-generation).
 
-Hand-reviewed CSS background styles that work reliably in Satori's
+Hand-reviewed CSS background styles created by Babatunde Fatai that work reliably in Satori's
 constrained rendering environment. Translated from
 [PatternCraft](https://github.com/megh-bari/pattern-craft) (MIT).
 
@@ -63,9 +63,13 @@ tested against Satori 0.19.x.
 
 ## Browse patterns
 
-[Live catalogue URL — add when deployed]
+[[Live catalogue URL](https://satori-patterns.vercel.app/)]
 
 ## License
+
+MIT — includes patterns from
+[Babatunde-Fatai/satori-patterns](https://github.com/Babatunde-Fatai/satori-patterns)
+(MIT, copyright Babatunde Fatai)
 
 MIT — includes original patterns from
 [megh-bari/pattern-craft](https://github.com/megh-bari/pattern-craft)
