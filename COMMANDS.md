@@ -89,6 +89,17 @@ cd packages/satori-patterns && npm version minor    # Bump minor version
 
 ---
 
+## Committing thumbnails (required for Vercel deploy)
+
+```bash
+git add apps/browser/public/thumbnails/
+git commit -m "chore: commit generated thumbnails for Vercel deploy"
+git push
+# Vercel will redeploy automatically
+```
+
+---
+
 ## Vercel deployment
 
 ```bash

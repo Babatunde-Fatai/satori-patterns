@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": false,
   "license": "MIT",
-  "description": "Satori-compatible background patterns for use with @vercel/og and ImageResponse. Translated from PatternCraft (megh-bari/pattern-craft).",
+  "description": "Satori-compatible background patterns for use with @vercel/og and ImageResponse. Translated and verified from PatternCraft.",
   "keywords": [
     "satori",
     "og-image",
@@ -12,13 +12,14 @@
     "open-graph",
     "next.js",
     "vercel",
-    "social-media"
+    "social-media",
+    "patterncraft"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/megh-bari/satori-patterns.git"
+    "url": "https://github.com/Babatunde-Fatai/satori-patterns.git"
   },
-  "homepage": "https://satori-patterns.vercel.app",
+  "homepage": "https://github.com/Babatunde-Fatai/satori-patterns#readme",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
@@ -28,7 +29,7 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "files": ["dist"],
+  "files": ["dist", "README.md"],
   "peerDependencies": {
     "satori": ">=0.10.0"
   },

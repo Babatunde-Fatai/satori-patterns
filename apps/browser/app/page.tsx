@@ -21,6 +21,22 @@ interface ApprovedFile {
 // Helpers
 // ---------------------------------------------------------------------------
 
+async function copyToClipboard(text: string): Promise<void> {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    await navigator.clipboard.writeText(text)
+    return
+  }
+  // Fallback for non-secure contexts or missing API
+  const ta = document.createElement("textarea")
+  ta.value = text
+  ta.setAttribute("readonly", "")
+  ta.style.cssText = "position:absolute;left:-9999px;top:-9999px"
+  document.body.appendChild(ta)
+  ta.select()
+  document.execCommand("copy")
+  document.body.removeChild(ta)
+}
+
 function toCamelCase(id: string): string {
   return id
     .toLowerCase()
@@ -42,35 +58,47 @@ function NpmInstallChip() {
   const [copied, setCopied] = useState(false)
 
   async function handleCopy() {
-    await navigator.clipboard.writeText("npm install satori-patterns")
+    await copyToClipboard("npm install satori-patterns")
     setCopied(true)
-    setTimeout(() => setCopied(false), 2000)
+    setTimeout(() => setCopied(false), 1500)
   }
 
   return (
-    <button
-      onClick={handleCopy}
-      title="Click to copy"
+    <div
       style={{
         display: "inline-flex",
         alignItems: "center",
-        gap: 10,
-        background: "#0f1810",
-        border: `1px solid ${copied ? "#4ade80" : "#656d4a"}`,
+        gap: 12,
+        background: "rgba(0,0,0,0.35)",
+        border: "1px solid rgba(166,138,100,0.4)",
         borderRadius: 8,
-        padding: "10px 16px",
-        cursor: "pointer",
-        transition: "border-color 200ms ease",
-        fontFamily: "'JetBrains Mono', 'Fira Code', monospace",
+        padding: "8px 16px",
+        fontFamily: "monospace",
       }}
     >
-      <span style={{ fontSize: 13, color: "#ede0d4", letterSpacing: "0.01em" }}>
+      <span style={{ fontSize: 13, color: "#ede0d4" }}>
         npm install satori-patterns
       </span>
-      <span style={{ fontSize: 11, color: copied ? "#4ade80" : "#656d4a", flexShrink: 0, fontFamily: "sans-serif" }}>
+      <button
+        onClick={handleCopy}
+        title="Click to copy"
+        style={{
+          fontSize: 11,
+          color: copied ? "#ffffff" : "#a68a64",
+          background: "none",
+          border: "none",
+          cursor: "pointer",
+          padding: 0,
+          fontFamily: "sans-serif",
+          transition: "color 160ms ease",
+          flexShrink: 0,
+        }}
+        onMouseEnter={(e) => { if (!copied) e.currentTarget.style.color = "#ffffff" }}
+        onMouseLeave={(e) => { if (!copied) e.currentTarget.style.color = "#a68a64" }}
+      >
         {copied ? "Copied!" : "Copy"}
-      </span>
-    </button>
+      </button>
+    </div>
   )
 }
 
@@ -139,13 +167,13 @@ function DetailModal({ pattern, onClose }: { pattern: ApprovedPattern; onClose: 
 
   async function copyStyle() {
     if (!pattern.satoriStyle) return
-    await navigator.clipboard.writeText(JSON.stringify(pattern.satoriStyle, null, 2))
+    await copyToClipboard(JSON.stringify(pattern.satoriStyle, null, 2))
     setCopiedStyle(true)
     setTimeout(() => setCopiedStyle(false), 1500)
   }
 
   async function copyImport() {
-    await navigator.clipboard.writeText(`import { ${camelName} } from 'satori-patterns'`)
+    await copyToClipboard(`import { ${camelName} } from 'satori-patterns'`)
     setCopiedImport(true)
     setTimeout(() => setCopiedImport(false), 1500)
   }
@@ -590,14 +618,14 @@ export default function PatternGrid() {
 
   const copyStyle = useCallback(async (p: ApprovedPattern) => {
     if (!p.satoriStyle) return
-    await navigator.clipboard.writeText(JSON.stringify(p.satoriStyle, null, 2))
+    await copyToClipboard(JSON.stringify(p.satoriStyle, null, 2))
     setCopiedId(p.id)
     setTimeout(() => setCopiedId(null), 1500)
   }, [])
 
   const copyImport = useCallback(async (p: ApprovedPattern) => {
     const name = toCamelCase(p.id)
-    await navigator.clipboard.writeText(`import { ${name} } from 'satori-patterns'`)
+    await copyToClipboard(`import { ${name} } from 'satori-patterns'`)
     setCopiedImportId(p.id)
     setTimeout(() => setCopiedImportId(null), 1500)
   }, [])
@@ -629,57 +657,77 @@ export default function PatternGrid() {
       )}
 
       {/* ── HERO ── */}
-      <header style={{
-        background: "#2f3e46",
-        padding: "56px 24px 52px",
-      }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 32 }}>
-          {/* Left: text */}
-          <div style={{ flex: "1 1 400px" }}>
-            <div style={{
-              fontSize: 11,
-              fontWeight: 700,
-              letterSpacing: "0.15em",
-              textTransform: "uppercase",
-              color: "#a68a64",
-              marginBottom: 14,
-            }}>
-              Open Source
-            </div>
+      <header style={{ background: "#2f3e46" }}>
+        {/* Top strip */}
+        <div style={{
+          height: 64,
+          borderBottom: "1px solid rgba(255,255,255,0.1)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          paddingLeft: 40,
+          paddingRight: 40,
+        }}>
+          <span style={{
+            fontSize: 11,
+            fontWeight: 500,
+            letterSpacing: "0.12em",
+            color: "#a68a64",
+            textTransform: "uppercase",
+          }}>
+            Open Source
+          </span>
+          <NpmInstallChip />
+        </div>
+
+        {/* Title zone */}
+        <div style={{
+          padding: "64px 40px 72px",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "flex-start",
+          flexWrap: "wrap",
+          gap: 32,
+        }}>
+          {/* Left: title + subtitle */}
+          <div>
             <h1 style={{
               fontFamily: "var(--font-display)",
-              fontSize: "clamp(36px, 5vw, 52px)",
-              fontWeight: 700,
+              fontSize: "clamp(56px, 6vw, 88px)",
+              fontWeight: 800,
               letterSpacing: "-0.03em",
-              color: "#ffffff",
-              margin: "0 0 14px",
-              lineHeight: 1.1,
+              lineHeight: 1.0,
+              margin: 0,
             }}>
-              Satori Patterns
+              <span style={{ color: "#ffffff", display: "block" }}>Satori</span>
+              <span style={{ color: "#a68a64", display: "block" }}>Patterns</span>
             </h1>
             <p style={{
-              fontSize: 16,
+              fontSize: 17,
+              lineHeight: 1.6,
               color: "rgba(237,224,212,0.7)",
-              margin: 0,
-              maxWidth: 520,
-              lineHeight: 1.65,
+              maxWidth: 480,
+              marginTop: 20,
+              marginBottom: 0,
+              marginLeft: 0,
+              marginRight: 0,
             }}>
               Hand-reviewed patterns confirmed to render correctly in Satori.
               Drop-in styles for OG images, social cards, and hero sections.
             </p>
           </div>
 
-          {/* Right: CTA block */}
+          {/* Right: stats */}
           <div style={{
             display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-end",
-            gap: 10,
-            justifyContent: "center",
-            flex: "0 0 auto",
+            alignItems: "center",
+            flexShrink: 0,
           }}>
-            <NpmInstallChip />
-            <span style={{ fontSize: 12, color: "rgba(237,224,212,0.4)" }}>
+            <span style={{
+              fontSize: 13,
+              color: "rgba(237,224,212,0.5)",
+              fontVariantNumeric: "tabular-nums",
+            }}>
               {data.meta.count} approved · updated {new Date(data.meta.updatedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
             </span>
           </div>

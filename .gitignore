@@ -42,8 +42,9 @@ next-env.d.ts
 
 
 # satori-patterns generated assets
-/apps/browser/public/thumbnails/*
-!/apps/browser/public/thumbnails/.gitkeep
+# thumbnails are committed so Vercel builds have PNG files
+# /apps/browser/public/thumbnails/*
+# !/apps/browser/public/thumbnails/.gitkeep
 
 # upstream sync artifacts
 /scripts/diff-report.json
