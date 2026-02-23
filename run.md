@@ -75,6 +75,23 @@ Or directly:
 cd apps/browser && npm run dev
 ```
 
+## NPM Publishing
+
+```bash
+# Check what will be published (dry run, no upload):
+cd packages/satori-patterns && npm pack --dry-run
+
+# Publish (requires npm login first):
+npm login
+cd packages/satori-patterns && npm publish --access public
+
+# Check if package name is available first:
+npm view satori-patterns name
+
+# Bump version after changes:
+cd packages/satori-patterns && npm version patch   # or minor, major
+```
+
 ## Package Build & Typecheck
 
 ```bash
@@ -120,6 +137,30 @@ Or connect the repo to Vercel and set the root directory to `apps/browser`.
 | `BATCH_SIZE` | 15 | Patterns per render batch |
 | `BATCH_DELAY_MS` | 100 | Delay between batches (ms) |
 | `RENDER_TIMEOUT_MS` | 10000 | Max render time per pattern (ms) |
+
+## data/ — Approval State Files
+
+These files live at the repo root in `data/` and **are committed to the repo**.
+They are the source of truth for human approval decisions.
+
+| File | Purpose |
+|---|---|
+| `data/approved.json` | Patterns approved for the public catalogue and NPM package. Drives `apps/browser` (Vercel) and `scripts/build-index.ts`. |
+| `data/rejected.json` | Patterns rejected during review. Audit trail only — not used for exports. |
+| `data/reconvert-queue.json` | Patterns queued for re-conversion (Satori output looked wrong). Used by the review tool's "Run Reconversion" button. |
+
+**Do NOT add `data/` to `.gitignore`.**
+Committing these files is how approval state is preserved and shared.
+
+## Review Tool (Local Only)
+
+```bash
+npm run dev:review
+# → http://localhost:3001
+```
+
+This app is **never deployed**. It reads/writes `data/*.json` files directly via Node.js `fs`.
+Run the browser app first (`npm run dev:browser`) so thumbnails are served at `http://localhost:3000/thumbnails`.
 
 ## Project Structure
 

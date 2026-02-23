@@ -1,0 +1,5 @@
+{
+  "_comment": "Patterns rejected during human review. This file IS committed to the repo. It is NOT used for public catalogue or NPM exports — only for audit trail and to prevent re-queuing. Do NOT add data/ to .gitignore.",
+  "meta": { "updatedAt": "2026-02-22T00:00:00.000Z", "count": 0 },
+  "patterns": []
+}

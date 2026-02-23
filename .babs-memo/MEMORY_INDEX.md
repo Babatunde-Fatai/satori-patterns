@@ -1,6 +1,6 @@
 # Memory Index (v2.1)
 
-Last Updated: 2026-02-19
+Last Updated: 2026-02-22
 
 This is an index only.
 Durable decisions live in `.babs-memo/memory/<project>.md`.
@@ -9,7 +9,8 @@ Durable decisions live in `.babs-memo/memory/<project>.md`.
 - Watchtower Frontend: `.babs-memo/memory/design-strip.md`
 
 ## Sessions
-- Current: `.babs-memo/sessions/2026-02-19-SESSION.md`
+- Current: `.babs-memo/sessions/2026-02-22-SESSION.md`
+- Previous: `.babs-memo/sessions/2026-02-21-SESSION.md`
 
 
 ## Rules

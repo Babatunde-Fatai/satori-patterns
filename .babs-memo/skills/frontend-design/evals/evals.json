@@ -1,0 +1,81 @@
+{
+  "name": "senior-product-designer-evals",
+  "skills": ["senior-product-designer"],
+  "evals": [
+    {
+      "name": "From Scratch Intake Flow",
+      "query": "I want to launch my personal site but I have nothing yet. Can you design it for me?",
+      "expected_behavior": [
+        "Identifies from-scratch mode and starts structured discovery.",
+        "Runs intake rounds before producing implementation direction.",
+        "Collects color and typography decisions through explicit intake options."
+      ],
+      "success_criteria": [
+        "Asks whether this is from-scratch or existing-codebase work.",
+        "Collects audience, goals, and content inventory before synthesis.",
+        "Produces a design intent synthesis before implementation-ready output.",
+        "Avoids skipping discovery and jumping into generic design output."
+      ]
+    },
+    {
+      "name": "Existing Codebase Visual Refresh",
+      "query": "I already have a Next.js site and only want a visual refresh, not a rebuild.",
+      "expected_behavior": [
+        "Requests current-state context and confirms existing stack.",
+        "Captures explicit preserve-vs-replace constraints.",
+        "Produces additive refresh direction, not full rewrite direction."
+      ],
+      "success_criteria": [
+        "Asks what should be kept vs changed.",
+        "Frames recommendations as keep/replace/add.",
+        "Maintains compatibility with existing structure/routes.",
+        "Includes wiring integrity checks (links, CTAs, navigation continuity)."
+      ]
+    },
+    {
+      "name": "Conflicting References Pushback",
+      "query": "Use these two references: one is ultra-minimal white SaaS, the other is dark brutalist editorial. Blend both exactly.",
+      "expected_behavior": [
+        "Flags conflict between reference directions.",
+        "Requests a priority decision or explicit element-level merge.",
+        "Explains tradeoffs before further synthesis."
+      ],
+      "success_criteria": [
+        "Calls out contradiction explicitly instead of blending blindly.",
+        "Asks user to resolve design priority.",
+        "Provides constrained options after conflict is acknowledged.",
+        "Does not finalize direction until conflict is resolved."
+      ]
+    },
+    {
+      "name": "User-Supplied Colors and Fonts",
+      "query": "I already picked my colors and fonts. Use #0B132B, #1C2541, #5BC0BE with Satoshi for headlines and Manrope for body.",
+      "expected_behavior": [
+        "Accepts user-supplied visual system inputs.",
+        "Maps provided colors and fonts to explicit roles.",
+        "Continues remaining discovery without overriding defaults."
+      ],
+      "success_criteria": [
+        "Does not replace user-provided colors/fonts unless asked.",
+        "Defines practical usage roles for provided colors.",
+        "Confirms display/body typography usage constraints.",
+        "Continues intake for navigation/content/context after acceptance."
+      ]
+    },
+    {
+      "name": "Subpage-Only Scope",
+      "query": "Don't give me a full design output. I only need implementation specs for Blog, Podcast, and Speaking pages.",
+      "expected_behavior": [
+        "Respects subpage-only scope.",
+        "Uses subpage patterns and outputs scoped implementation specs.",
+        "Aligns subpage guidance with the existing or selected design system."
+      ],
+      "success_criteria": [
+        "Does not force full-site output when subpages are requested.",
+        "Each page includes data architecture, layout, integrations, update instructions, and wiring.",
+        "Output remains constrained to requested pages.",
+        "Optionally offers further page specs without expanding scope automatically."
+      ]
+    }
+  ]
+}

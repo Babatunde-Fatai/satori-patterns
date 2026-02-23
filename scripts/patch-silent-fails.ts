@@ -1,3 +1,19 @@
+/**
+ * HISTORICAL RECOVERY SCRIPT — 2026-02-21 batch only.
+ *
+ * This script was a one-time workaround for a pipeline ordering failure that
+ * occurred during the initial 2026-02-21 render run: render-all.ts detected
+ * SILENT_FAIL patterns correctly but did not write the status to the manifest
+ * before the pipeline continued, leaving 31 patterns as UNCLASSIFIED.
+ *
+ * As of the fix applied 2026-02-22, render-all.ts writes `entry.status`
+ * atomically in the same batch loop where pixels are analysed, so this script
+ * is NO LONGER NEEDED for new render runs.
+ *
+ * DO NOT add this to pipeline:full or any automated pipeline.
+ * Only run manually if recovering from a specific pipeline ordering failure
+ * where render-all.ts ran but crashed before writing the manifest.
+ */
 import {
   readManifest,
   writeManifest,

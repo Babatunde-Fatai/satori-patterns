@@ -791,6 +791,17 @@ Section G overrides apply immediately during subsequent runs.
   "overridesRule": "B"
 }
 ```
+### Learned Pattern 7: Category-aware social background scoring (2026-02-22)
+```json
+{
+  "date": "2026-02-22",
+  "runId": "score-social-rewrite",
+  "finding": "The original variance-only heuristic (threshold < 35 = false) scored 192/200 PASS patterns as not suitable for social backgrounds, with 0 going to human review. Dark grids and dark dot arrays were auto-rejected because low luminance variance is inherent to their design, not a sign of being unsuitable. Many dark patterns are exactly the kind of clean backgrounds used in social media graphics.",
+  "action": "Replaced global variance heuristic with a category-aware dispatcher in score-social-bg.ts: (1) gradients: reject only truly flat outputs (variance < 5, no radial-gradient layer); (2) geometric: never penalise for low variance — check backgroundSize for small tile structure instead; reject only 100% 100% with no tile; (3) decorative/effects: keep variance heuristic but lower auto-reject threshold from < 35 to < 15. Never auto-approve (never return true). Result: null count 8 → 218, false count 192 → 44.",
+  "affectedPatternIds": [],
+  "overridesRule": "D"
+}
+```
 <!-- LEARNED_PATTERNS_END -->
 SECTION H: VALIDATION RULES
 Rule H-1: Manifest Validation

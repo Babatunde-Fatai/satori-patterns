@@ -19,13 +19,15 @@
     "pipeline:review-queue": "tsx scripts/generate-review-queue.ts",
     "pipeline:patch-silent-fails": "tsx scripts/patch-silent-fails.ts",
     "pipeline:diff-upstream": "tsx scripts/diff-upstream.ts",
-    "pipeline:full": "npm run pipeline:init && npm run pipeline:translate && npm run pipeline:render && npm run pipeline:add-fallbacks && npm run pipeline:render-fallbacks && npm run pipeline:patch-silent-fails && npm run pipeline:score-social && npm run pipeline:review-queue && npm run build:index",
+    "validate:unclassified": "tsx scripts/validate-unclassified.ts",
+    "pipeline:full": "npm run pipeline:init && npm run pipeline:translate && npm run pipeline:render && npm run validate:unclassified && npm run pipeline:add-fallbacks && npm run pipeline:render-fallbacks && npm run pipeline:score-social && npm run pipeline:review-queue && npm run build:index",
     "build:index": "tsx scripts/build-index.ts",
     "build:package": "cd packages/satori-patterns && npm run build",
     "typecheck": "cd packages/satori-patterns && npm run typecheck",
     "skill:update": "tsx scripts/update-skill.ts",
     "test:css-parser": "vitest run scripts/utils/cssParser.test.ts",
-    "dev:browser": "cd apps/browser && npm run dev"
+    "dev:browser": "cd apps/browser && npm run dev",
+    "dev:review": "cd apps/review && npm run dev"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",

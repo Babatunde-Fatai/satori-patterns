@@ -1,0 +1,5 @@
+{
+  "_comment": "Source of truth for approved patterns. This file IS committed to the repo. It drives the public catalogue (apps/browser) and the NPM package exports (scripts/build-index.ts). Do NOT add data/ to .gitignore.",
+  "meta": { "updatedAt": "2026-02-22T00:00:00.000Z", "count": 0 },
+  "patterns": []
+}
