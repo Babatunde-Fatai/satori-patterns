@@ -868,11 +868,42 @@ export default function PatternGrid() {
       {/* ── FOOTER ── */}
       <footer style={{
         background: "#2f3e46",
-        padding: "24px",
-        textAlign: "center",
+        padding: "18px 32px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        flexWrap: "wrap",
+        gap: 8,
       }}>
         <div style={{ fontSize: 13, color: "rgba(237,224,212,0.5)" }}>
-          Satori Patterns · Open source · MIT License
+          By{" "}
+          <a
+            href="https://babatunde.ng"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "rgba(237,224,212,0.8)", textDecoration: "none" }}
+            onMouseEnter={(e) => { e.currentTarget.style.color = "#ede0d4" }}
+            onMouseLeave={(e) => { e.currentTarget.style.color = "rgba(237,224,212,0.8)" }}
+          >
+            Babatunde Fatai
+          </a>
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <span style={{ fontSize: 12, color: "rgba(237,224,212,0.35)", letterSpacing: "0.04em" }}>
+            satori-patterns
+          </span>
+          <a
+            href="https://npmjs.com/package/satori-patterns"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <img
+              src="https://img.shields.io/npm/v/satori-patterns?style=flat-square&colorA=2f3e46&colorB=a68a64&label=npm"
+              alt="npm version"
+              style={{ height: 18, display: "block" }}
+            />
+          </a>
         </div>
       </footer>
 

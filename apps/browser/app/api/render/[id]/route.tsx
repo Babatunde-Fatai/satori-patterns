@@ -1,40 +1,13 @@
 import { ImageResponse } from "@vercel/og"
 import { NextRequest, NextResponse } from "next/server"
-import fs from "node:fs"
-import path from "node:path"
-
-interface PatternRecord {
-  id: string
-  name: string
-  status: string
-  renderMethod: string
-  satoriStyle: Record<string, unknown> | null
-}
-
-interface Manifest {
-  patterns: PatternRecord[]
-}
-
-function resolveManifestPath(): string {
-  const envPath = process.env.MANIFEST_PATH
-  if (envPath) {
-    return path.isAbsolute(envPath) ? envPath : path.join(process.cwd(), envPath)
-  }
-  // Fallback for environments where MANIFEST_PATH is not set
-  return path.join(process.cwd(), "..", "..", "compatibility.json")
-}
-
-function loadManifest(): Manifest {
-  return JSON.parse(fs.readFileSync(resolveManifestPath(), "utf8"))
-}
+import approvedData from "../../../../../../data/approved.json"
 
 export async function GET(
   _req: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
   const { id } = await params
-  const manifest = loadManifest()
-  const pattern = manifest.patterns.find((p) => p.id === id)
+  const pattern = approvedData.patterns.find((p) => p.id === id)
 
   if (!pattern) {
     return NextResponse.json({ error: `Pattern not found: ${id}` }, { status: 404 })
@@ -42,7 +15,7 @@ export async function GET(
 
   if (!pattern.satoriStyle || pattern.renderMethod !== "css") {
     return NextResponse.json(
-      { error: `Pattern ${id} is not CSS-renderable (status: ${pattern.status}, method: ${pattern.renderMethod})` },
+      { error: `Pattern ${id} is not CSS-renderable (method: ${pattern.renderMethod})` },
       { status: 400 }
     )
   }
@@ -55,7 +28,7 @@ export async function GET(
             width: "100%",
             height: "100%",
             display: "flex",
-            ...pattern.satoriStyle,
+            ...(pattern.satoriStyle as Record<string, unknown>),
           }}
         />
       ),

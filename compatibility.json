@@ -1,15 +1,15 @@
 {
   "meta": {
     "upstreamCommitSha": "17a4d3c7b5c923e52dfd4d32420aa9ca3bdfa41e",
-    "generatedAt": "2026-02-23T09:24:26.514Z",
-    "satoriVersion": "satori@0.19.2"
+    "generatedAt": "2026-02-25T21:30:52.023Z",
+    "satoriVersion": "0.19.2"
   },
   "patterns": [
     {
       "id": "azure-depths",
       "name": "Azure Depths",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -23,17 +23,17 @@
         "backgroundColor": "#000000"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "azure-depths-top",
       "name": "Azure Depths Top",
       "category": "decorative",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -48,16 +48,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:1/0/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "blue-corner-glow",
       "name": "Blue Corner Glow",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -70,18 +69,18 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "bottom-amber-glow",
       "name": "Bottom Amber Glow",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -99,13 +98,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "bottom-emerald-glow",
       "name": "Bottom Emerald Glow",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -123,13 +122,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "bottom-gradient-radial",
       "name": "Bottom Gradient Radial",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -146,13 +145,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "bottom-pink-glow",
       "name": "Bottom Pink Glow",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -170,13 +169,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "bottom-slate-radial",
       "name": "Bottom Slate Radial",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -193,13 +192,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "bottom-teal-glow",
       "name": "Bottom Teal Glow",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -217,13 +216,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "bottom-violet-radial",
       "name": "Bottom Violet Radial",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -240,13 +239,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "crimson-depth",
       "name": "Crimson Depth",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -260,17 +259,17 @@
         "backgroundColor": "#000000"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "crimson-depth-top",
       "name": "Crimson Depth Top",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -283,17 +282,17 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dark-horizon-glow",
       "name": "Dark Horizon Glow",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -307,17 +306,17 @@
         "backgroundColor": "#000000"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dark-horizon-glow-top",
       "name": "Dark Horizon Glow Top",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -330,17 +329,17 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "emerald-void",
       "name": "Emerald Void",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -354,17 +353,17 @@
         "backgroundColor": "#000000"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "emerald-void-top",
       "name": "Emerald Void Top",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -377,17 +376,17 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "green-corner-soft",
       "name": "Green Corner Soft",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -400,39 +399,18 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
-    },
-    {
-      "id": "halftone-radial-dots",
-      "name": "Halftone Radial Dots",
-      "category": "decorative",
-      "status": "PASS",
-      "skipReason": null,
-      "renderMethod": "svg-fallback",
-      "features": [
-        "tile-grid-repeat"
-      ],
-      "preliminaryStatus": "SVG_FALLBACK_REQUIRED",
-      "satoriStyle": null,
-      "satoriVersion": "0.19.2",
-      "suitableForSocialBg": null,
-      "notes": [
-        "v1-priority-fallback",
-        "render-error:React is not defined",
-        "rendered-via-svg-fallback"
-      ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "indigo-corner-deep",
       "name": "Indigo Corner Deep",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -445,18 +423,18 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "lavender-cosmic-glow",
       "name": "Lavender Cosmic Glow",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -473,13 +451,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "mystic-purple-orb",
       "name": "Mystic Purple Orb",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -496,13 +474,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "orange-corner-warm",
       "name": "Orange Corner Warm",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -515,18 +493,18 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "orchid -depths",
       "name": "Orchid  Depths",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -540,17 +518,17 @@
         "backgroundColor": "#000000"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "orchid-depths-top",
       "name": "Orchid Depths Top",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -563,17 +541,17 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "pink-corner-dream",
       "name": "Pink Corner Dream",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -586,18 +564,18 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "purple-corner-high",
       "name": "Purple Corner High",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -610,18 +588,18 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "purple-corner-less",
       "name": "Purple Corner Less",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -634,18 +612,18 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "purple-haze-burst",
       "name": "Purple Haze Burst",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -662,13 +640,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "purple-radial-bloom-light",
       "name": "Purple Radial Bloom Light",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -685,13 +663,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "rose-corner-elegant",
       "name": "Rose Corner Elegant",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -704,18 +682,18 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "soft-rose-glow-corners",
       "name": "Soft Rose Glow Dual Corners",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -728,18 +706,18 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#fff8fc"
       },
-      "satoriVersion": "satori@0.19.2",
-      "suitableForSocialBg": false,
+      "satoriVersion": "0.19.2",
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "soft-rose-glow-left-corner",
       "name": "Soft Rose Glow Left Corner",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -752,18 +730,18 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#fff8fc"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "soft-rose-glow-right-corner",
       "name": "Soft Rose Glow Right Corner",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -776,18 +754,18 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#fff8fc"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "teal-corner-cool",
       "name": "Teal Corner Cool",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -800,18 +778,18 @@
         "backgroundPosition": "auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "top-amber-glow",
       "name": "Top Amber Glow",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -829,13 +807,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "top-emerald-glow",
       "name": "Top Emerald Glow",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -853,13 +831,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "top-gradient-radial",
       "name": "Top Gradient Radial",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -876,13 +854,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "top-pink-glow",
       "name": "Top Pink Glow",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -900,13 +878,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "top-slate-radial",
       "name": "Top Slate Radial",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -923,13 +901,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "top-teal-glow",
       "name": "Top Teal Glow",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -947,13 +925,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "top-violet-radial",
       "name": "Top Violet Radial",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -970,13 +948,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "violet-abyss",
       "name": "Violet Abyss",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -990,17 +968,17 @@
         "backgroundColor": "#000000"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "violet-abyss-top",
       "name": "Violet Abyss Top",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1013,17 +991,17 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "violet-dream-sphere",
       "name": "Violet Dream Sphere",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1040,13 +1018,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "yellow-corner-bright",
       "name": "Yellow Corner Bright",
       "category": "decorative",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1064,13 +1042,13 @@
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "aurora-dream-corner-whispers",
       "name": "Aurora Dream Corner Whispers",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1085,17 +1063,17 @@
         "backgroundColor": "#f7eaff"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:5/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "aurora-dream-diagonal-flow",
       "name": "Aurora Dream Diagonal Flow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1114,13 +1092,13 @@
       "notes": [
         "normalized-layer-counts:5/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "aurora-dream-soft-harmony",
       "name": "Aurora Dream Soft Harmony",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1139,13 +1117,13 @@
       "notes": [
         "normalized-layer-counts:5/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "aurora-dream-vivid-bloom",
       "name": "Aurora Dream Vivid Bloom",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1164,13 +1142,13 @@
       "notes": [
         "normalized-layer-counts:5/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "aurora-mystic-mist",
       "name": "Aurora Mystic Mist",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1188,13 +1166,13 @@
       "notes": [
         "normalized-layer-counts:3/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "aurora-silk-fade",
       "name": "Aurora Silk Fade",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1207,17 +1185,17 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "cool-blue-glow-bg-left",
       "name": "Cool Blue Glow Left",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1236,13 +1214,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "cool-blue-glow-bg",
       "name": "Cool Blue Glow Right",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1261,13 +1239,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "cool-blue-glow-bg-top",
       "name": "Cool Blue Glow Top",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1286,13 +1264,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "cosmic-aurora",
       "name": "Cosmic Aurora",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1306,17 +1284,17 @@
         "backgroundColor": "#0a0a0a"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:4/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "cosmic-noise",
       "name": "Cosmic Noise",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1330,17 +1308,17 @@
         "backgroundPosition": "auto, auto, auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "cosmic-sparkle",
       "name": "Cosmic Sparkle",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1354,17 +1332,17 @@
         "backgroundPosition": "auto, auto, auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "cotton-candy-sky",
       "name": "Cotton Candy Sky",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1377,17 +1355,17 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "cotton-candy-sky-reverse",
       "name": "Cotton Candy Sky Reverse",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1400,17 +1378,17 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "crimson-core-glow",
       "name": "Crimson Core Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1424,17 +1402,17 @@
         "backgroundPosition": "auto, auto, auto, auto, auto, auto, auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:7/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "crystal-maze",
       "name": "Crystal Maze",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1449,17 +1427,17 @@
         "backgroundPosition": "auto, auto, auto, auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:4/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "deep-ocean-glow",
       "name": "Deep Ocean Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1472,17 +1450,17 @@
         "backgroundPosition": "auto, auto, auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dreamy-sky-pink-glow",
       "name": "Dreamy Sky Pink Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1496,17 +1474,17 @@
         "backgroundColor": "#fefcff"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dreamy-sunset-gradient",
       "name": "Dreamy Sunset Gradient",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1525,13 +1503,13 @@
       "notes": [
         "normalized-layer-counts:4/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "ember-glow",
       "name": "Ember Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1549,13 +1527,13 @@
       "notes": [
         "normalized-layer-counts:3/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "green-center-glow",
       "name": "Green Center Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1573,13 +1551,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "indigo-center-glow",
       "name": "Indigo Center Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1597,13 +1575,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "lavender-blush-left-flow",
       "name": "Lavender Blush Left Flow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1616,17 +1594,17 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "lavender-blush-right-flow",
       "name": "Lavender Blush Right Flow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1639,17 +1617,17 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "light-sky-blue-glow",
       "name": "Light Sky Blue Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1667,13 +1645,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "lime-center-glow",
       "name": "Lime Center  Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1691,13 +1669,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "midnight-ember",
       "name": "Midnight Ember",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1710,17 +1688,17 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "midnight-mist",
       "name": "Midnight Mist",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1738,13 +1716,13 @@
       "notes": [
         "normalized-layer-counts:3/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "mint-fresh-breeze",
       "name": "Mint Fresh Breeze",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1759,17 +1737,17 @@
         "backgroundColor": "#f0fdfa"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:4/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "minty-cloud-drift",
       "name": "Minty Cloud Drift",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1782,11 +1760,11 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "moonlit-fog",
@@ -1807,13 +1785,13 @@
       "notes": [
         "skip-reason:css-filter"
       ],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "morning-haze",
       "name": "Morning Haze",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1831,34 +1809,13 @@
       "notes": [
         "normalized-layer-counts:3/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
-    },
-    {
-      "id": "noise-grain",
-      "name": "Noise Grain",
-      "category": "effects",
-      "status": "PASS",
-      "skipReason": null,
-      "renderMethod": "svg-fallback",
-      "features": [
-        "svg-turbulence-filter"
-      ],
-      "preliminaryStatus": "SVG_FALLBACK_REQUIRED",
-      "satoriStyle": null,
-      "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
-      "notes": [
-        "v1-priority-fallback",
-        "render-error:React is not defined",
-        "rendered-via-svg-fallback"
-      ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "northern-aurora",
       "name": "Northern Aurora",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1871,17 +1828,17 @@
         "backgroundPosition": "auto, auto, auto, auto, auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:5/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "ocean-breeze-fade",
       "name": "Ocean Breeze Fade",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1894,17 +1851,17 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "orange-soft-glow",
       "name": "Orange Soft Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1921,13 +1878,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "pastel-wave",
       "name": "Pastel Wave",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1940,17 +1897,17 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "peachy-mint-dream",
       "name": "Peachy Mint Dream",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1963,17 +1920,17 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "peachy-sunrise-glow",
       "name": "Peachy Sunrise Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -1992,13 +1949,13 @@
       "notes": [
         "normalized-layer-counts:4/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "purple-center-glow",
       "name": "Purple Center Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2016,13 +1973,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "purple-glow-bg-left",
       "name": "Purple Glow Left",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2041,13 +1998,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "purple-glow-bg",
       "name": "Purple Glow Right",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2066,13 +2023,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "purple-glow-bg-top",
       "name": "Purple Glow Top",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2091,13 +2048,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "rose-gold-whisper",
       "name": "Rose Gold Whisper",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2110,17 +2067,17 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "soft-blue-radial",
       "name": "Soft Blue Radial",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2138,13 +2095,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "soft-dark-yellow-glow",
       "name": "Soft Dark Yellow Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2161,13 +2118,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "soft-green-glow",
       "name": "Soft Green Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2184,13 +2141,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "soft lavender-center-glow",
       "name": "Soft Lavender Center Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2208,13 +2165,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "soft-morning-mist",
       "name": "Soft Morning Mist",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2233,13 +2190,13 @@
       "notes": [
         "normalized-layer-counts:4/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "soft-pastel-dream",
       "name": "Soft Pastel Dream",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2252,17 +2209,17 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "soft-pink-glow",
       "name": "Soft Pink Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2280,13 +2237,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "soft-warm-pastel-texture",
       "name": "Soft Warm Pastel",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2300,17 +2257,17 @@
         "backgroundColor": "#fff8f0"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "soft-yellow-glow",
       "name": "Soft Yellow Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2327,13 +2284,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "spring-meadow-mist",
       "name": "Spring Meadow Mist",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2346,17 +2303,17 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "sunny-glow",
       "name": "Sunny Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2374,13 +2331,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "sunrise-glow",
       "name": "Sunrise Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2398,13 +2355,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "teal-glow-bg-left",
       "name": "Teal Glow Left",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2423,13 +2380,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "teal-glow-bg",
       "name": "Teal Glow Right",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2443,18 +2400,18 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "teal-glow-bg-top",
       "name": "Teal Glow Top",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2473,13 +2430,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "tropical-dusk-glow",
       "name": "Tropical Dusk Glow",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2497,13 +2454,13 @@
       "notes": [
         "normalized-layer-counts:3/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "volcanic-ember",
       "name": "Volcanic Ember",
       "category": "effects",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2518,16 +2475,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:4/0/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:4/0/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "beige-texture",
       "name": "Warm Beige",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2541,17 +2497,17 @@
         "backgroundColor": "#f5f5dc"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "warm-light-apricot-coral",
       "name": "Warm Light Apricot & Coral",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2565,17 +2521,17 @@
         "backgroundColor": "#fff9f5"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "warm-orange-glow-bg-left",
       "name": "Warm Orange Glow Left",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2594,13 +2550,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "warm-orange-glow-bg",
       "name": "Warm Orange Glow Right",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2614,18 +2570,18 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "warm-orange-glow-bg-top",
       "name": "Warm Orange Glow Top",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2644,13 +2600,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "warm-pastel-coral-cream",
       "name": "Warm Soft Coral & Cream",
       "category": "effects",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2664,17 +2620,17 @@
         "backgroundColor": "#fef9f7"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "basic-grid",
       "name": "Basic Grid",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2689,16 +2645,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:2/1/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "black-basic-grid",
       "name": "Black Basic Grid",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2714,16 +2669,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:2/1/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "black-grid-white-dots",
       "name": "Black Grid with White Dots",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2739,16 +2693,14 @@
       },
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
-      "notes": [
-        "silent-fail-detected:low-variance"
-      ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "notes": [],
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "bottom-fade-grid",
       "name": "Bottom Fade Grid",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2765,16 +2717,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:2/1/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "circuit-board",
       "name": "Circuit Board",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2790,10 +2741,9 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:4/4/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:4/4/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "circuit-board-dark",
@@ -2813,7 +2763,7 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "circuit-board-light",
@@ -2833,7 +2783,7 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "circuit-board-vibes",
@@ -2852,7 +2802,7 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "complex-multiplier",
@@ -2872,13 +2822,13 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "concentric-squares-dark",
       "name": "Concentric Squares - Dark",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2897,13 +2847,13 @@
       "notes": [
         "normalized-layer-counts:4/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "concentric-squares-light",
       "name": "Concentric Squares - Light",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2922,13 +2872,13 @@
       "notes": [
         "normalized-layer-counts:4/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "cross-diagonal-lines",
       "name": "Cross Diagonal Lines",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -2947,7 +2897,7 @@
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "crosshatch-art-dark",
@@ -2966,7 +2916,7 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "crosshatch-art-light",
@@ -2985,13 +2935,13 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dark-basic-grid-slate",
       "name": "Dark Basic Grid",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3007,16 +2957,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:2/1/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dark-basic-grid-faded",
       "name": "Dark Basic Grid (Faded)",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3032,16 +2981,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:2/1/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dark-circuit-board",
       "name": "Dark Circuit Board",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3057,10 +3005,9 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:4/4/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:4/4/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dark-dot-matrix",
@@ -3078,13 +3025,13 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dark-dotted-grid",
       "name": "Dark Dotted Grid",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3099,16 +3046,14 @@
       },
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
-      "notes": [
-        "silent-fail-detected:low-variance"
-      ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "notes": [],
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dark-grid-lines",
       "name": "Dark Grid Lines",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3124,16 +3069,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:2/1/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dark-grid-white-dots",
       "name": "Dark Grid with White Dots",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3149,16 +3093,14 @@
       },
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
-      "notes": [
-        "silent-fail-detected:low-variance"
-      ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "notes": [],
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dark-noise-colored-high",
       "name": "Dark Noise Colored",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3171,16 +3113,16 @@
         "backgroundPosition": "0 0, 10px 10px, 15px 5px",
         "backgroundColor": "#000000"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dark-sphere-grid",
       "name": "Dark Sphere Grid",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3194,18 +3136,18 @@
         "backgroundPosition": "auto, auto, auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/3/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dark-white-dotted-grid",
       "name": "Dark White Dotted Grid",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3220,10 +3162,8 @@
       },
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
-      "notes": [
-        "silent-fail-detected:low-variance"
-      ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "notes": [],
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dashed-bottom-fade-grid",
@@ -3243,7 +3183,7 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dashed-bottom-left-fade-grid",
@@ -3263,7 +3203,7 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dashed-bottom-right-fade-grid",
@@ -3283,7 +3223,7 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dashed-center-fade-grid",
@@ -3303,7 +3243,7 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dashed-grid-light",
@@ -3322,7 +3262,7 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dashed-top-fade-grid",
@@ -3342,7 +3282,7 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dashed-top-left-fade-grid",
@@ -3362,7 +3302,7 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dashed-top-right-fade-grid",
@@ -3382,13 +3322,13 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-cross-Bottom-left-fade-grid",
       "name": "Diagonal Cross Bottom Left Fade Grid",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3407,13 +3347,13 @@
       "notes": [
         "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-cross-Bottom-right-fade-grid",
       "name": "Diagonal Cross Bottom Right Fade Grid",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3432,13 +3372,13 @@
       "notes": [
         "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-cross-center-fade-grid",
       "name": "Diagonal Cross Center Fade Grid",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3457,13 +3397,13 @@
       "notes": [
         "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-cross-grid",
       "name": "Diagonal Cross Grid",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3481,13 +3421,13 @@
       "notes": [
         "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-cross-grid-bottom",
       "name": "Diagonal Cross Grid Bottom",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3506,13 +3446,13 @@
       "notes": [
         "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-cross-grid-top",
       "name": "Diagonal Cross Grid Top",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3531,13 +3471,13 @@
       "notes": [
         "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-cross-top-left-fade-grid",
       "name": "Diagonal Cross Top Left Fade Grid",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3556,13 +3496,13 @@
       "notes": [
         "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-cross-top-right-fade-grid",
       "name": "Diagonal Cross Top Right Fade Grid",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3581,34 +3521,13 @@
       "notes": [
         "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
-    },
-    {
-      "id": "diagonal-crosshatch",
-      "name": "Diagonal Crosshatch",
-      "category": "geometric",
-      "status": "PASS",
-      "skipReason": null,
-      "renderMethod": "svg-fallback",
-      "features": [
-        "tile-grid-repeat"
-      ],
-      "preliminaryStatus": "SVG_FALLBACK_REQUIRED",
-      "satoriStyle": null,
-      "satoriVersion": "0.19.2",
-      "suitableForSocialBg": null,
-      "notes": [
-        "v1-priority-fallback",
-        "render-error:React is not defined",
-        "rendered-via-svg-fallback"
-      ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-fade-bottom-grid-Left",
       "name": "Diagonal Fade Bottom Grid Left",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3625,16 +3544,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:2/1/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-fade-bottom-grid-right",
       "name": "Diagonal Fade Bottom Grid Right",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3651,16 +3569,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:2/1/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-fade-center-grid",
       "name": "Diagonal Fade Center Grid",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3677,16 +3594,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:2/1/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-fade-grid-left",
       "name": "Diagonal Fade Grid Left",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3703,16 +3619,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:2/1/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-fade-grid-right",
       "name": "Diagonal Fade Grid Right",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3729,10 +3644,9 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:2/1/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-light-green",
@@ -3751,7 +3665,7 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-electric erange",
@@ -3770,7 +3684,7 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-green-glow",
@@ -3789,7 +3703,7 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-light",
@@ -3808,7 +3722,7 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-red/blue-glow",
@@ -3827,7 +3741,7 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-synthwave",
@@ -3846,7 +3760,7 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-striped-grid",
@@ -3865,13 +3779,13 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "diagonal-lines",
       "name": "Diagonal Stripes",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3887,37 +3801,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:1/0/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
-    },
-    {
-      "id": "dot-grid",
-      "name": "Dot Grid",
-      "category": "geometric",
-      "status": "PASS",
-      "skipReason": null,
-      "renderMethod": "svg-fallback",
-      "features": [
-        "tile-grid-repeat"
-      ],
-      "preliminaryStatus": "SVG_FALLBACK_REQUIRED",
-      "satoriStyle": null,
-      "satoriVersion": "0.19.2",
-      "suitableForSocialBg": null,
-      "notes": [
-        "v1-priority-fallback",
-        "render-error:React is not defined",
-        "rendered-via-svg-fallback"
-      ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dual-gradient-overlay-strong",
       "name": "Dual Gradient Overlay",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3931,18 +3823,18 @@
         "backgroundPosition": "auto, auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:4/4/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dual-gradient-overlay-bottom",
       "name": "Dual Gradient Overlay (Bottom)",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3956,18 +3848,18 @@
         "backgroundPosition": "auto, auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:4/4/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dual-gradient-overlay-top",
       "name": "Dual Gradient Overlay (Top)",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -3981,18 +3873,18 @@
         "backgroundPosition": "auto, auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:4/4/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dual-gradient-overlay-strong-swapped",
       "name": "Dual Gradient Overlay Swapped",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4006,18 +3898,18 @@
         "backgroundPosition": "auto, auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:4/4/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "gradient-left-diagonal-lines",
       "name": "Gradient Left Diagonal Lines",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4032,17 +3924,17 @@
         "backgroundColor": "#0f0f0f"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "gradient-right-diagonal-lines",
       "name": "Gradient Right Diagonal Lines",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4057,17 +3949,17 @@
         "backgroundColor": "#0f0f0f"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "grid-dual-purple-glow",
       "name": "Grid Dual Purple Glow",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4081,18 +3973,18 @@
         "backgroundPosition": "auto, auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:4/4/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "grid-quad-purple-glow",
       "name": "Grid Quad Purple Glow",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4106,12 +3998,12 @@
         "backgroundPosition": "auto, auto, auto, auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:6/6/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "hexagonal-lines",
@@ -4130,13 +4022,13 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "left-masked-basic-grid",
       "name": "Left Masked Basic Grid",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4151,16 +4043,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:2/1/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "left-masked-circuit-board",
       "name": "Left Masked Circuit Board",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4176,10 +4067,9 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:4/4/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:4/4/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "left-masked-circuit-board-light",
@@ -4199,13 +4089,13 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "left-masked-concentric-squares-light",
       "name": "Left Masked Concentric Squares - Light",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4224,7 +4114,7 @@
       "notes": [
         "normalized-layer-counts:4/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "left-masked-dashed-grid-light",
@@ -4243,13 +4133,13 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "left-masked-diagonal-cross-grid",
       "name": "Left Masked Diagonal Cross Grid",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4267,13 +4157,13 @@
       "notes": [
         "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "left-masked-noise-texture-darker-dots",
       "name": "Left Masked Noise Texture (Darker Dots)",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4292,13 +4182,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "left-masked-white-grid-with-dots",
       "name": "Left Masked White Grid with Dots",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4314,37 +4204,14 @@
       },
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
-      "notes": [
-        "silent-fail-detected:low-variance"
-      ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
-    },
-    {
-      "id": "line-grid",
-      "name": "Line Grid",
-      "category": "geometric",
-      "status": "PASS",
-      "skipReason": null,
-      "renderMethod": "svg-fallback",
-      "features": [
-        "tile-grid-repeat"
-      ],
-      "preliminaryStatus": "SVG_FALLBACK_REQUIRED",
-      "satoriStyle": null,
-      "satoriVersion": "0.19.2",
-      "suitableForSocialBg": null,
-      "notes": [
-        "v1-priority-fallback",
-        "render-error:React is not defined",
-        "rendered-via-svg-fallback"
-      ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "notes": [],
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "magenta-orb-grid",
       "name": "Magenta Orb Grid",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4358,18 +4225,18 @@
         "backgroundPosition": "auto, auto, auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/3/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "magenta-orb-grid-light",
       "name": "Magenta Orb Grid Light",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4383,12 +4250,12 @@
         "backgroundPosition": "auto, auto, auto",
         "backgroundColor": "white"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/3/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "matrix-green",
@@ -4407,13 +4274,13 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "multi-cross-diagonal-lines",
       "name": "Multi Cross Diagonal Lines",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4432,13 +4299,13 @@
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "neon-vertical-lines",
       "name": "Neon Vertical Lines",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4455,16 +4322,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:1/1/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "noise-texture-darker-dots",
       "name": "Noise Texture (Darker Dots)",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4482,7 +4348,7 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "paper-texture",
@@ -4502,7 +4368,7 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "pixel-grid-pattern",
@@ -4520,13 +4386,13 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "purple-corner-grid",
       "name": "Purple Corner Grid",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4540,18 +4406,18 @@
         "backgroundPosition": "auto, auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:4/4/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "purple-gradient-grid-left",
       "name": "Purple Gradient Grid Left",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4565,18 +4431,18 @@
         "backgroundPosition": "auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/3/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "purple-gradient-grid-right",
       "name": "Purple Gradient Grid Right",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4590,18 +4456,18 @@
         "backgroundPosition": "auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/3/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "right-masked-basic-grid",
       "name": "Right Masked Basic Grid",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4616,16 +4482,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:2/1/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "right-masked-circuit-board",
       "name": "Right Masked Circuit Board",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4641,10 +4506,9 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:4/4/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:4/4/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "right-masked-circuit-board-light",
@@ -4664,13 +4528,13 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "right-masked-concentric-squares-light",
       "name": "Right Masked Concentric Squares - Light",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4689,7 +4553,7 @@
       "notes": [
         "normalized-layer-counts:4/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "right-masked-dashed-grid-light",
@@ -4708,13 +4572,13 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [],
-      "updatedAt": "2026-02-21T07:12:55.664Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "right-masked-diagonal-cross-grid",
       "name": "Right Masked Diagonal Cross Grid",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4732,13 +4596,13 @@
       "notes": [
         "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "right-masked-noise-texture-darker-dots",
       "name": "Right Masked Noise Texture (Darker Dots)",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4757,13 +4621,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "right-masked-white-grid-with-dots",
       "name": "Right Masked White Grid with Dots",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4779,16 +4643,14 @@
       },
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
-      "notes": [
-        "silent-fail-detected:low-variance"
-      ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "notes": [],
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "small-grid",
       "name": "Small Grid",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4804,16 +4666,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:2/1/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "striped-dark",
       "name": "Striped Dark",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4827,17 +4688,17 @@
         "backgroundPosition": "auto"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "top-fade-grid",
       "name": "Top Fade Grid",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4854,16 +4715,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:2/1/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "variable-spacing",
       "name": "Variable Spacing",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4878,17 +4738,17 @@
         "backgroundColor": "#0f0f0f"
       },
       "satoriVersion": "0.19.2",
-      "suitableForSocialBg": false,
+      "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "vercel-grid-subtle",
       "name": "Vercel Grid Subtle",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4904,16 +4764,15 @@
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
-        "normalized-layer-counts:2/1/0",
-        "silent-fail-detected:low-variance"
+        "normalized-layer-counts:2/1/0"
       ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "white-grid-with-dots",
       "name": "White Grid with Dots",
       "category": "geometric",
-      "status": "SILENT_FAIL",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4929,16 +4788,14 @@
       },
       "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
-      "notes": [
-        "silent-fail-detected:low-variance"
-      ],
-      "updatedAt": "2026-02-21T11:11:07.885Z"
+      "notes": [],
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "white-sphere-grid",
       "name": "White Sphere Grid",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4952,18 +4809,18 @@
         "backgroundPosition": "auto, auto, auto",
         "backgroundColor": "white"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:3/3/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "woven-fabric-light",
       "name": "Woven Fabric - Light",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -4977,18 +4834,18 @@
         "backgroundPosition": "auto, auto, auto, auto",
         "backgroundColor": "#ffffff"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:4/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "zigzag-lightning-dark",
       "name": "Zigzag Lightning - Dark",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5007,13 +4864,13 @@
       "notes": [
         "normalized-layer-counts:4/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "zigzag-lightning-light",
       "name": "Zigzag Lightning - Light",
       "category": "geometric",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5032,13 +4889,13 @@
       "notes": [
         "normalized-layer-counts:4/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "center-spotlight-amber",
       "name": "Amber Spotlight",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5056,13 +4913,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "arctic-lights-glow",
       "name": "Arctic Lights Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5079,13 +4936,13 @@
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "aurora-edge-glow",
       "name": "Aurora Edge Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5103,13 +4960,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "aurora-midnight-glow",
       "name": "Aurora Midnight Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5126,13 +4983,13 @@
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "aurora-waves",
       "name": "Aurora Waves",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5151,13 +5008,13 @@
       "notes": [
         "normalized-layer-counts:3/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "blue-radial-glow",
       "name": "Blue Radial Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5170,18 +5027,18 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#0f172a"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "center-spotlight-blue",
       "name": "Blue Spotlight",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5199,13 +5056,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "center-spotlight",
       "name": "Center Spotlight",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5223,13 +5080,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "copper-bronze",
       "name": "Copper & Bronze",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5247,13 +5104,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "copper-forge-glow",
       "name": "Copper Forge Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5270,13 +5127,13 @@
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "cosmic-nebula",
       "name": "Cosmic Nebula",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5293,13 +5150,13 @@
       "notes": [
         "normalized-layer-counts:5/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "crimson-shadow-glow",
       "name": "Crimson Shadow Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5316,13 +5173,13 @@
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "center-spotlight-crimson",
       "name": "Crimson Spotlight",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5340,13 +5197,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "cyan-radial-glow",
       "name": "Cyan Radial Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5359,18 +5216,18 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "center-spotlight-cyan",
       "name": "Cyan Spotlight",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5388,13 +5245,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "dark-radial-glow",
       "name": "Dark Radial Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5407,18 +5264,18 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "deep-navy-gold",
       "name": "Deep Navy & Gold",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5436,13 +5293,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "emerald-depths-glow",
       "name": "Emerald Depths Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5459,13 +5316,13 @@
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "emerald-radial-glow",
       "name": "Emerald Radial Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5478,18 +5335,18 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "center-spotlight-emerald",
       "name": "Emerald Spotlight",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5507,13 +5364,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "forest-emerald",
       "name": "Forest Emerald",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5531,13 +5388,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "gold-radial-glow",
       "name": "Gold Radial Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5550,18 +5407,18 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "golden-horizon-glow",
       "name": "Golden Horizon Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5578,13 +5435,13 @@
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "indigo-cosmos-glow",
       "name": "Indigo Cosmos Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5601,13 +5458,13 @@
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "lime-radial-glow",
       "name": "Lime Radial Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5620,18 +5477,18 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "magenta-nebula-glow",
       "name": "Magenta Nebula Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5648,13 +5505,13 @@
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "midnight-aurora-glow",
       "name": "Midnight Aurora Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5672,13 +5529,13 @@
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "midnight-radial-glow",
       "name": "Midnight Radial Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5696,13 +5553,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "moonlight-silver",
       "name": "Moonlight Silver",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5720,13 +5577,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "ocean-abyss-glow",
       "name": "Ocean Abyss Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5743,13 +5600,13 @@
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "orange-radial-glow",
       "name": "Orange Radial Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5762,18 +5619,18 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "pearl-mist-glow",
       "name": "Pearl Mist Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5790,13 +5647,13 @@
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "pink-aurora-top",
       "name": "Pink Aurora Top",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5814,13 +5671,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "pink-radial-glow",
       "name": "Pink Radial Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5833,18 +5690,18 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "prismatic-aurora-burst",
       "name": "Prismatic Aurora Burst",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5861,13 +5718,13 @@
       "notes": [
         "normalized-layer-counts:5/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "purple-radial-glow",
       "name": "Purple Radial Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5880,18 +5737,18 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "red-radial-glow",
       "name": "Red Radial Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5904,18 +5761,18 @@
         "backgroundPosition": "auto",
         "backgroundColor": "#020617"
       },
-      "satoriVersion": "satori@0.19.2",
+      "satoriVersion": "0.19.2",
       "suitableForSocialBg": null,
       "notes": [
         "normalized-layer-counts:1/0/0"
       ],
-      "updatedAt": "2026-02-23T09:24:26.514Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "rich-burgundy",
       "name": "Rich Burgundy",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5933,13 +5790,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "center-spotlight-rose",
       "name": "Rose Spotlight",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5957,13 +5814,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "rose-twilight-glow",
       "name": "Rose Twilight Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -5980,13 +5837,13 @@
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "royal-purple",
       "name": "Royal Purple",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -6004,13 +5861,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "steel-blue",
       "name": "Steel Blue",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -6028,13 +5885,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "stellar-mist",
       "name": "Stellar Mist",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -6051,13 +5908,13 @@
       "notes": [
         "normalized-layer-counts:6/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "top-spotlight",
       "name": "Top Spotlight",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -6075,13 +5932,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "center-spotlight-violet",
       "name": "Violet Spotlight",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -6099,13 +5956,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "violet-storm-glow",
       "name": "Violet Storm Glow",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -6122,13 +5979,13 @@
       "notes": [
         "normalized-layer-counts:2/0/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "warm-amber",
       "name": "Warm Amber",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -6146,13 +6003,13 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     },
     {
       "id": "center-spotlight-white",
       "name": "White Spotlight",
       "category": "gradients",
-      "status": "PASS",
+      "status": "UNCLASSIFIED",
       "skipReason": null,
       "renderMethod": "css",
       "features": [
@@ -6170,7 +6027,7 @@
       "notes": [
         "normalized-layer-counts:1/1/0"
       ],
-      "updatedAt": "2026-02-22T17:58:43.330Z"
+      "updatedAt": "2026-02-25T21:30:52.432Z"
     }
   ]
 }

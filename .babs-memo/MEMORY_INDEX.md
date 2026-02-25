@@ -9,8 +9,8 @@ Durable decisions live in `.babs-memo/memory/<project>.md`.
 - Watchtower Frontend: `.babs-memo/memory/design-strip.md`
 
 ## Sessions
-- Current: `.babs-memo/sessions/2026-02-23-SESSION.md`
-- Previous: `.babs-memo/sessions/2026-02-22-SESSION.md`
+- Current: `.babs-memo/sessions/2026-02-25-SESSION.md`
+- Previous: `.babs-memo/sessions/2026-02-23-SESSION.md`
 
 
 ## Rules

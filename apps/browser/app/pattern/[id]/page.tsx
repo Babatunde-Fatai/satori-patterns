@@ -1,8 +1,6 @@
-import fs from "node:fs"
-import path from "node:path"
 import Link from "next/link"
-import { unstable_cache } from "next/cache"
 import { ThumbnailWithFallback } from "./ThumbnailWithFallback"
+import approvedData from "../../../../../data/approved.json"
 
 interface ApprovedPattern {
   id: string
@@ -14,30 +12,8 @@ interface ApprovedPattern {
   notes: string[]
 }
 
-interface ApprovedFile {
-  meta: { updatedAt: string; count: number }
-  patterns: ApprovedPattern[]
-}
-
-function resolveApprovedPath(): string {
-  const envPath = process.env.APPROVED_PATH
-  if (envPath) {
-    return path.isAbsolute(envPath) ? envPath : path.join(process.cwd(), envPath)
-  }
-  return path.join(process.cwd(), "data", "approved.json")
-}
-
-const getApproved = unstable_cache(
-  async (): Promise<ApprovedFile> => {
-    return JSON.parse(fs.readFileSync(resolveApprovedPath(), "utf8"))
-  },
-  ["approved-patterns"],
-  { revalidate: false }
-)
-
 export async function generateStaticParams(): Promise<{ id: string }[]> {
-  const data = await getApproved()
-  return data.patterns.map((p) => ({ id: p.id }))
+  return approvedData.patterns.map((p) => ({ id: p.id }))
 }
 
 function toCamelCase(id: string): string {
@@ -55,8 +31,7 @@ const CAT_COLORS: Record<string, { bg: string; text: string; border: string }> =
 
 export default async function PatternDetail({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
-  const data = await getApproved()
-  const pattern = data.patterns.find((p) => p.id === id)
+  const pattern = approvedData.patterns.find((p) => p.id === id) as ApprovedPattern | undefined
   const camelName = toCamelCase(id)
 
   if (!pattern) {

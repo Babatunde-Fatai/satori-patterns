@@ -1,8 +1,0 @@
-{
-  "_comment": "Patterns queued for re-conversion (e.g. Satori output looked wrong). This file IS committed to the repo. The review tool (apps/review) reads this to drive the 'Run Reconversion' flow. Do NOT add data/ to .gitignore.",
-  "meta": {
-    "updatedAt": "2026-02-23T09:24:43.951Z",
-    "count": 0
-  },
-  "patterns": []
-}

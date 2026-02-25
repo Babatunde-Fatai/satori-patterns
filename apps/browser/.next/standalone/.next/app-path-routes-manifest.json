@@ -1,0 +1,7 @@
+{
+  "/api/render/[id]/route": "/api/render/[id]",
+  "/_not-found/page": "/_not-found",
+  "/api/manifest/route": "/api/manifest",
+  "/page": "/",
+  "/pattern/[id]/page": "/pattern/[id]"
+}
