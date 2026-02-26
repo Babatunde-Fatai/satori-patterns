@@ -1,6 +1,6 @@
 # Satori Patterns
 
-> 161 hand-reviewed background patterns for use with Satori,
+> Hundreds of hand-reviewed background patterns for use with Satori,
 > @vercel/og, and ImageResponse. Drop-in CSS styles for OG images,
 > social cards, and hero sections.
 >
@@ -12,7 +12,7 @@
 
 ## What this is
 
-A curated library of background patterns built by [Babatunde Fatai](https://babatunde.ng), translated from
+A curated library of background patterns built and translated from
 [PatternCraft](https://github.com/megh-bari/pattern-craft) (MIT) into
 Satori-compatible inline CSS objects. Each pattern is rendered and verified against Satori 0.19.x,
 screened for use as social media backgrounds, and exported as named TypeScript constants.
